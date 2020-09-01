@@ -215,7 +215,7 @@
         }
 
         for (i = 0; i < docBody.length; i++) {
-            if (docBody[i].innerHTML.indexOf('\"') == -1 | docBody[i].innerHTML.indexOf('\“') == -1) {
+            if (docBody[i].innerHTML.indexOf('\"') == -1 && docBody[i].innerHTML.indexOf('\“') == -1) {
                 if (docBody[i].parentElement.localName != "blockquote") {
                     docBody[i].innerHTML = docBody[i].innerHTML.replace(rioters, riotersTxt[Math.floor(Math.random()*riotersTxt.length)]);
                 }
