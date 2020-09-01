@@ -1,5 +1,5 @@
 # Installation Instructions
 
-[Firefox](Installation/Firefox.md)
+[Firefox](https://github.com/addDetails/addDetails/blob/master/Installation/Firefox.md)
 
-[Chrome](Installation/Chrome.md)
+[Chrome](https://github.com/addDetails/addDetails/blob/master/Installation/Chrome.md)
