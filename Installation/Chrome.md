@@ -1,12 +1,3 @@
----
-title: "addDetails"
-output: 
-  html_document: 
-    keep_md: yes
----
-
-
-
 ## Installation instructions for Chrome
 
 *Example shown using Windows, but things will be essentially identical on other operating systems.*
