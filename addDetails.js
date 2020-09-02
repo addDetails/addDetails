@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         addDetails
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.1.1
 // @description  Adds additional details to websites.
 // @author       addDetails
 // @match        *://*.spectator.org/*
