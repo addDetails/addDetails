@@ -58,6 +58,7 @@
         const docTweets = document.getElementsByClassName("twitter-tweet");
         //const docTweets = document.getElementsByClassName("tweet-embed");
         const docButtons = document.getElementsByTagName("button");
+        //const docButtons = document.getElementsByClassName("react-share__ShareButton");
 
         const allTheCrap = [
             "$& (<a href='https://www.reuters.com/article/us-usa-trump-impeachment-gao/u-s-watchdog-says-trump-administration-violated-law-by-withholding-ukraine-aid-idUSKBN1ZF22Y'>who illegally pressured Ukraine into announcing an investigation into Joe Biden for Trump's personal political advantage</a>)",
@@ -78,7 +79,7 @@
             "$& (<a href='https://www.psychologytoday.com/us/blog/mind-in-the-machine/201609/the-psychology-behind-donald-trumps-unwavering-support'>who has convinced many Americans that he is the only person who should be allowed the freedom to perform any sexual or criminal act he wants</a>)",
             "$& (<a href='https://www.towleroad.com/2020/07/trump-doctors-were-very-surprised-that-i-passed-a-cognitive-test-watch/'>who is suspected to have suffered a stroke in November 2019</a>)",
             "$& (<a href='https://www.factcheck.org/2016/05/trumps-made-in-the-u-s-a-spin/'>whose clothing line continues to be made in China</a>)",
-            "$& (<a href='https://www.haaretz.com/us-news/the-ominous-nazi-era-precedent-to-trump-s-fake-news-attacks-1.5438960'>who, if we're being honest, has used smear tactics against the media that are similar to those that were used by the Nazis</a>)",
+            "$& (<a href='https://www.haaretz.com/us-news/the-ominous-nazi-era-precedent-to-trump-s-fake-news-attacks-1.5438960'>who, in the interest of full disclosure, has used smear tactics against the media that are similar to those that were used by the Nazis</a>)",
             "$& (<a href='https://www.foxnews.com/us/states-spike-poison-control-calls'>who is no stranger to embarrassing comments, having suggested that people could ingest bleach to kill the coronavirus</a>)",
             "$& (<a href='https://www.washingtontimes.com/news/2020/jun/6/donald-trump-shatters-personal-twitter-record-200-/'>who once tweeted 200 times in one day</a>)",
             "$& (<a href='https://www.washingtontimes.com/news/2019/jun/30/how-socialism-violates-all-ten-commandments/'>who has reportedly never violated a single one of the Ten Commandments</a>)",
@@ -89,7 +90,7 @@
             "$& (<a href='https://presidentialgolftracker.com/'>who has golfed much less than former President Woodrow Wilson</a>)",
             "$& (<a href='https://filmdaily.co/news/jeffrey-epstein-donald-trump/'>whose connections to Jeffrey Epstein have not been made fully public</a>)",
             "$& (<a href='https://www.usatoday.com/story/news/factcheck/2020/08/07/trump-lawyer-helped-kanye-west-try-get-wisconsins-ballot/3313650001/'>whose lawyers are coordinating with Kanye West's lawyers to try to siphon votes away from Joe Biden</a>)",
-            "$& (<a href='https://www.abc.net.au/news/2020-07-20/best-bits-from-donald-trumps-fox-news-interview/12471794'>who expressed doubts about whether he will accept the voters' wishes in the 2020 Presidential election</a>)",
+            "$& (<a href='https://www.abc.net.au/news/2020-07-20/best-bits-from-donald-trumps-fox-news-interview/12471794'>who has expressed doubts about whether he will accept the voters' wishes in the 2020 Presidential election</a>)",
             "$& (<a href='https://www.reuters.com/article/us-usa-election-dropboxes-idUSKBN25G14I'>who has done an excellent job creating confusion among voters about how to participate in the 2020 election</a>)",
             "$& (<a href='https://www.adn.com/nation-world/2020/08/22/analysis-how-trump-mnuchin-and-dejoy-edged-the-postal-service-into-a-crisis/'>who flexed his unlimited power over the entire U.S. populace by crippling the USPS at exactly the right moment</a>)",
             "$& (<a href='https://www.redletterchristians.org/wp-content/uploads/2016/10/pence.trump_.jpg'>who has cast such a spell over Republicans that he could get away with grabbing his male supporters by the p*ssy as well</a>)",
@@ -97,11 +98,14 @@
             "$& (<a href='https://www.syracuse.com/life-and-culture/g66l-2019/11/1478636cbd8810/trump-may-host-the-apprentice-white-house-tv-show-buzz.html'>whose previous career as a reality TV show host demonstrates that Americans are willing to vote for entertainers who have no experience in law or government</a>)",
             "$& (<a href='https://www.brookings.edu/blog/fixgov/2018/04/13/trumps-lies-corrode-democracy/'>who has told over 20,000 lies as President</a>)",
             "$& (<a href='https://www.businessinsider.com/trump-pence-gop-law-order-for-others-but-not-associates-2020-8'>whose 'law-and-order' campaign messaging appears to be in direct contradition to the dozens of laws that he -- and those working for him -- have broken</a>)",
-            "$& (<a href='https://www.businessinsider.com/trump-is-not-law-order-president-lawless-disorder-rnc-2020-8'>who has created lawlesness and disorder as President</a>)",
+            "$& (<a href='https://www.businessinsider.com/trump-is-not-law-order-president-lawless-disorder-rnc-2020-8'>who has created governmental lawlesness and disorder as President</a>)",
             "$& (<a href='https://www.bbc.com/news/world-europe-53799065'>whose administration has shown remarkable similarities to the government of Belarus</a>)",
             "$& (<a href='https://www.upi.com/Top_News/US/2020/08/07/Trump-admin-to-send-federal-troops-to-Memphis-St-Louis/7211596772279/'>who has expanded 'big-government' influence over American citizens by sending federal troops into U.S. cities</a>)",
             "$& (<a href='https://www.reuters.com/article/us-goodyear-trump-idUSKCN25F1XQ'>who, by encouraging a boycott of Goodyear, has jeopardized the jobs of over 60,000 blue collar workers in Ohio</a>)",
-            "$& (<a href='https://blogs.timesofisrael.com/trump-benefits-from-violent-protests/'>who has capitalized on the fact that he benefits politically from increased division among Americans</a>)",
+            "$& (<a href='https://blogs.timesofisrael.com/trump-benefits-from-violent-protests/'>who has ushered in an uncharacteristically violent and polarized four years in modern America</a>)",
+            "$& (<a href='https://news.yahoo.com/5-ways-donald-trump-failed-drain-swamp-100013259.html'>who has failed to 'drain the swamp,' as promised</a>)",
+            "$& (<a href='https://www.marketwatch.com/story/trump-justice-department-sues-to-seize-private-property-for-border-wall-construction-2019-12-27'>who been criticized for government overreach for attempting to seize private property from American taxpayers</a>)",
+            "$& (<a href='https://www.forbes.com/sites/stevedenning/2019/02/24/why-we-should-worry-about-trumps-declaration-of-an-emergency/'>who has set numerous precedents during his time in office that will make it easier for all future presidents to abuse their power</a>)",
             "$& (<a href='https://www.axios.com/trump-john-kelly-fbi-41678290-167a-44c2-a20a-377955485bc8.html'>who sought to appoint an FBI director who would be loyal to him, rather than to the Constitution</a>)",
             "$& (<a href='https://thehill.com/blogs/blog-briefing-room/news/499917-trump-shares-video-supporter-saying-politically-only-good-democrat-is-a-dead'>who is considered to have incited violence when he shared a video saying \"the only good Democrat is a dead Democrat\"</a>)",
             "$& (<a href='https://lmtribune.com/news_ap/trump-s-deference-to-putin-back-under-harsh-scrutiny/article_f6871234-bba2-11ea-ab01-afa4b5a40c05.html'>who has raised justifiable skepticism about his lack of willingness to criticize Vladimir Putin, despite a reputation for criticizing almost everyone else</a>)",
@@ -109,8 +113,12 @@
 
 
         const regex = /\.*(?<!(Dear.))(President Trump|President Donald Trump|Donald Trump|Donald J. Trump|Donald J Trump|President Donald J. Trump|President Donald J Trump)(?!('|’|:))(?!.(\(|Jr|Junior|Sr|Senior))/gi;
+        const regexm = /\.*(?<!(Dear.))(President Trump|President Donald Trump|Donald Trump|Donald J. Trump|Donald J Trump|President Donald J. Trump|President Donald J Trump)(?!('|’|:))(?!.(\(|Jr|Junior|Sr|Senior))/gm;
+        const quoted = /(“(.*?)”|"(.*?)")/g;
         const kr = /Kyle Rittenhouse/gi;
         const antifa = /\bantifa\b/gi;
+        const socialism = /(\bsocialist\b|\bsocialism\b)/gi;
+        const marxism = /(\bmarxist\b|\bmarxism\b)/gi;
         const riots = /\briots\b/gi;
         const rioters = /\brioters\b/gi;
 
@@ -122,6 +130,7 @@
                         "$& (who, reportedly, has never received any formal training in the use of a firearm)",
                         "$& (whose legal argument of self-defense may fall flat because he was not authorized to patrol the streets with a semi-automatic weapon)",
                         "$& (violating curfew at the time of the incident)",
+                        "$& (who, fortunately, did not target any plainclothes officers)",
                         "$& (whose presence in Kenosha likely served to escalate, rather than reduce, tensions)"]
 
         const antifaLink = ["<a href='https://www.merriam-webster.com/dictionary/antifa'>$&</a>",
@@ -132,6 +141,24 @@
                             "$&",
                             "$&",
                             "$&"]
+
+        const socialismLink = ["<a href='https://www.dictionary.com/browse/socialism?s=t'>$&</a>",
+                               "<a href='https://www.oxfordlearnersdictionaries.com/definition/english/socialism'>$&</a>",
+                               "$&",
+                               "$&",
+                               "$&",
+                               "$&",
+                               "$&",
+                               "$&"]
+
+        const marxismLink = ["<a href='https://www.merriam-webster.com/dictionary/Marxism'>$&</a>",
+                             "<a href='https://www.dictionary.com/browse/marxism?s=t'>$&</a>",
+                             "$&",
+                             "$&",
+                             "$&",
+                             "$&",
+                             "$&",
+                             "$&"]
 
         const riotsTxt = ["protests (which were initiated as a reaction to repeated and unlawful acts of police violence)",
                           "protests",
@@ -150,7 +177,7 @@
                           "$&",
                           "$&"]
 
-        const riotersTxt = ["those peacefully protesting against police violence)",
+        const riotersTxt = ["citizens peacefully protesting against police violence",
                             "protestors",
                             "peaceful protestors",
                             "$&",
@@ -182,42 +209,83 @@
 
         var i;
 
-        for (i = 0; i < docBody.length-1; i++) {
-            if (docBody[i].innerHTML.indexOf('\"') == -1 && docBody[i].innerHTML.indexOf('\“') == -1) {
-                if (docBody[i].parentElement.localName != "blockquote") {
+        //for (i = 0; i < docBody.length; i++) {
+        //    docBody[i].innerHTML = docBody[i].innerHTML.replace(/(<a href=\"https:\/\/www.foxnews.com\/category\/person\/donald-trump\">President Trump<\/a>|<a href="https:\/\/www.foxnews.com\/category\/person\/donald-trump" target="_blank">President Trump<\/a>)/gi, "President Trump");
+        //    docBody[i].outerHTML = docBody[i].outerHTML.replace(/(<a href=\"https:\/\/www.foxnews.com\/category\/person\/donald-trump\">President Trump<\/a>|<a href="https:\/\/www.foxnews.com\/category\/person\/donald-trump" target="_blank">President Trump<\/a>)/gi, "President Trump");
+        //}
+
+        for (i = 0; i < docBody.length; i++) {
+            if (docBody[i].innerText.indexOf('\"') == -1 && docBody[i].innerText.indexOf('\“') == -1) {
+                if (docBody[i].parentElement !== null && docBody[i].parentElement !== undefined) {
+                    if (docBody[i].parentElement.localName != "blockquote") {
+                        docBody[i].innerHTML = docBody[i].innerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
+                    }
+                } else {
                     docBody[i].innerHTML = docBody[i].innerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
                 }
+            } else {
+                if (docBody[i].innerText.match(quoted) !== null && docBody[i].innerText.match(quoted) !== undefined) {
+                    if (docBody[i].innerText.match(quoted).indexOf(docBody[i].innerText.match(regexm)) == -1) {
+                        if (docBody[i].parentElement !== null && docBody[i].parentElement !== undefined) {
+                            if (docBody[i].parentElement.localName != "blockquote") {
+                                docBody[i].innerHTML = docBody[i].innerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
+                            }
+                        }
+                    }
+                }
             }
         }
 
+
+
+
+
+
+        //if (docBody[i].innerHTML.indexOf('\"') == -1 && docBody[i].innerHTML.indexOf('\“') == -1) {
+        //if (docBody[i].parentElement.localName != "blockquote") {
+        //    docBody[i].innerHTML = docBody[i].innerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
+        //}
+        //}
+        //}
+
         for (i = 0; i < docBody.length; i++) {
-            if (docBody[i].innerHTML.indexOf('\"') == -1 && docBody[i].innerHTML.indexOf('\“') == -1) {
-                if (docBody[i].parentElement.localName != "blockquote") {
-                    docBody[i].innerHTML = docBody[i].innerHTML.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
+            if (docBody[i].innerText.indexOf('\"') == -1 && docBody[i].innerText.indexOf('\“') == -1) {
+                if (docBody[i].parentElement !== null && docBody[i].parentElement !== undefined) {
+                    if (docBody[i].parentElement.localName != "blockquote") {
+                        docBody[i].innerHTML = docBody[i].innerHTML.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
+                    }
                 }
             }
         }
 
         for (i = 0; i < docBody.length; i++) {
-            if (docBody[i].innerHTML.indexOf('\"') == -1 && docBody[i].innerHTML.indexOf('\“') == -1) {
-                if (docBody[i].parentElement.localName != "blockquote") {
-                    docBody[i].innerHTML = docBody[i].innerHTML.replace(antifa, antifaLink[Math.floor(Math.random()*antifaLink.length)]);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(antifa, antifaLink[Math.floor(Math.random()*antifaLink.length)]);
+        }
+
+        for (i = 0; i < docBody.length; i++) {
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(socialism, socialismLink[Math.floor(Math.random()*socialismLink.length)]);
+        }
+
+        for (i = 0; i < docBody.length; i++) {
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(marxism, marxismLink[Math.floor(Math.random()*marxismLink.length)]);
+        }
+
+        for (i = 0; i < docBody.length; i++) {
+            if (docBody[i].innerText.indexOf('\"') == -1 && docBody[i].innerText.indexOf('\“') == -1) {
+                if (docBody[i].parentElement !== null && docBody[i].parentElement !== undefined) {
+                    if (docBody[i].parentElement.localName != "blockquote") {
+                        docBody[i].innerHTML = docBody[i].innerHTML.replace(riots, riotsTxt[Math.floor(Math.random()*riotsTxt.length)]);
+                    }
                 }
             }
         }
 
         for (i = 0; i < docBody.length; i++) {
-            if (docBody[i].innerHTML.indexOf('\"') == -1 && docBody[i].innerHTML.indexOf('\“') == -1) {
-                if (docBody[i].parentElement.localName != "blockquote") {
-                    docBody[i].innerHTML = docBody[i].innerHTML.replace(riots, riotsTxt[Math.floor(Math.random()*riotsTxt.length)]);
-                }
-            }
-        }
-
-        for (i = 0; i < docBody.length; i++) {
-            if (docBody[i].innerHTML.indexOf('\"') == -1 && docBody[i].innerHTML.indexOf('\“') == -1) {
-                if (docBody[i].parentElement.localName != "blockquote") {
-                    docBody[i].innerHTML = docBody[i].innerHTML.replace(rioters, riotersTxt[Math.floor(Math.random()*riotersTxt.length)]);
+            if (docBody[i].innerText.indexOf('\"') == -1 && docBody[i].innerText.indexOf('\“') == -1) {
+                if (docBody[i].parentElement !== null && docBody[i].parentElement !== undefined) {
+                    if (docBody[i].parentElement.localName != "blockquote") {
+                        docBody[i].innerHTML = docBody[i].innerHTML.replace(rioters, riotersTxt[Math.floor(Math.random()*riotersTxt.length)]);
+                    }
                 }
             }
         }
@@ -229,8 +297,14 @@
 
         //document.body.style.border = "15px solid blue";
 
-        for (i = 0; i < docButtons.length; i++) {
-            docButtons[i].outerHTML = '';
+        if (document.getElementsByTagName("button") !== null && document.getElementsByTagName("button") !== undefined) {
+            for (i = 0; i < docButtons.length; i++) {
+                if (docButtons[i] != null && docButtons[i] != undefined) {
+                    docButtons[i].outerHTML = '';
+                    //docButtons[i].innerHTML = '';
+                    //docButtons[i].formAction = '';
+                }
+            }
         }
 
         //document.body.style.border = "15px solid yellow";
@@ -260,11 +334,18 @@
 
         if (document.querySelectorAll(".article-footer")[0] !== null && document.querySelectorAll(".article-footer")[0] !== undefined) {
             document.querySelectorAll(".article-footer")[0].innerHTML = '';
+            document.querySelectorAll(".article-footer")[0].outerHTML = '';
         }
 
         if (document.querySelectorAll("#spotim-lazy")[0] !== null && document.querySelectorAll("#spotim-lazy")[0] !== undefined) {
             document.querySelectorAll("#spotim-lazy")[0].outerHTML = '';
         }
+
+        if (document.getElementById("PollyC") !== null && document.getElementById("PollyC") !== undefined) {
+            document.getElementById("PollyC").dataset.mp3u = '';
+        }
+
+
 
         //document.body.style.border = "15px solid white";
     }
@@ -284,10 +365,10 @@
 
                         setTimeout(function (){
 
-                            location.reload(true);
+                            location.reload(false);
 
 
-                        }, 1500);
+                        }, 500);
 
 
 
@@ -307,7 +388,7 @@
     };
 
     window.onload();
-    //addDetails();
+    addDetails();
 
 
 
