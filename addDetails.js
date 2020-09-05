@@ -252,6 +252,7 @@
 
         const appendTo2 = "He has always shown the highest respect to our active duty troops and veterans with utmost respect paid to those who have given the ultimate sacrifice and those wounded in battle.”";
         const appendTo2a = "The Atlantic’s report that he referred to US Marines killed during World War I as “losers” and “suckers.”";
+        const appendTo2b = "“It was a totally fake story, and that was confirmed by many people who were actually there,” Trump said.";
         const appendText2 = '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Via <a href="https://twitter.com/fitsnews?ref_src=twsrc%5Etfw">@fitsnews</a>: “Donald Trump: John McCain Is ‘A Loser’” <a href="http://t.co/sgiETvdUqi">http://t.co/sgiETvdUqi</a></p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/622522682245033984?ref_src=twsrc%5Etfw">July 18, 2015</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
 
         const prependTo = "Our group was spit on";
@@ -263,6 +264,8 @@
         const prependTo3 = "The White House produced an email indicating there was a “bad weather call”";
         const prependText3 = '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">According to one former senior Trump administration official: &quot;When the President spoke about the Vietnam War, he said, &#39;It was a stupid war. Anyone who went was a sucker&#39;.&quot;</p>&mdash; Jennifer Griffin (@JenGriffinFNC) <a href="https://twitter.com/JenGriffinFNC/status/1301975322397741057?ref_src=twsrc%5Etfw">September 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
 
+        const prependTo4 = "The president also announced he is expecting “tremendous” economic growth “in the very near future” as companies come closer to announcing a vaccine."
+        const prependText4 = '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Healthy young child goes to doctor, gets pumped with massive shot of many vaccines, doesn&#39;t feel good and changes - AUTISM. Many such cases!</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/449525268529815552?ref_src=twsrc%5Etfw">March 28, 2014</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> '
 
         const appendTo3 = "Trump told reporters that his current chief of staff, Mark Meadows, “is doing a great job, but Kelly was unable to do that.”";
         const appendText3a = '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">5/9 For the first time in American history, a president has repeatedly shown utter and vulgar contempt and disrespect for those who have served and died serving our country.</p>&mdash; Sully Sullenberger (@Captsully) <a href="https://twitter.com/Captsully/status/1301998164988301312?ref_src=twsrc%5Etfw">September 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> ';
@@ -398,6 +401,7 @@
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo, appendTo + appendText);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo2, appendTo2 + appendText2);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo2a, appendTo2a + appendText2);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo2b, appendTo2b + appendText2);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo3, appendTo3 + appendText3a + appendText3b + appendText3c + appendText3d + appendText3e);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo4, appendTo4 + appendText4);
 
@@ -405,7 +409,7 @@
             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo, prependText + prependTo);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo2, prependText2 + prependTo2);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo3, prependText3 + prependTo3);
-            //docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo4, prependText4 + prependTo4);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo4, prependText4 + prependTo4);
             // end custom text
         }
 
