@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         addDetails
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/addDetails/addDetails
 // @version      0.2
 // @description  Adds additional details to websites.
 // @author       addDetails
@@ -110,6 +110,7 @@
             //"$& (<a href='https://www.economist.com/leaders/2018/07/21/donald-trumps-humiliation-in-helsinki' target='_blank'>who has only shown a few moments of weakness during his presidency, many in the presence of Vladimir Putin</a>)",
             //"$& (<a href='https://www.syracuse.com/life-and-culture/g66l-2019/11/1478636cbd8810/trump-may-host-the-apprentice-white-house-tv-show-buzz.html' target='_blank'>whose previous career as a reality TV show host demonstrates that Americans are willing to vote for entertainers who have no experience in law or government</a>)",
             "$& (<a href='https://en.wikipedia.org/wiki/Veracity_of_statements_by_Donald_Trump' target='_blank'>who has told over 20,000 lies as President</a>)",
+            "$& (<a href='https://www.ipsos.com/en-us/news-polls/abc-Trump-Biden-protest' target='_blank'>who most Americans believe have made the protests worse</a>)",
             "$& (<a href='https://www.transparency.org/en/cpi/2019/results/usa' target='_blank'>who is perceived as having made the U.S. government more corrupt</a>)",
             "$& (<a href='https://www.youtube.com/watch?v=LUwnus4DulA&t=25s' target='_blank'>who promised in 2016 that he would put an end to crime and violence \"very soon\"</a>)",
             "$& (<a href='https://www.youtube.com/watch?v=oe3QeX5RTUs' target='_blank'>who, in 2016, claimed that \"beginning on January 20th of 2017, safety will be restored\"</a>)",
@@ -250,10 +251,28 @@
         const appendText = "<p>Approached for comment on the matter, Molly Maxfield responded, \“Don\'t ask me for shit.\”";
 
         const appendTo2 = "He has always shown the highest respect to our active duty troops and veterans with utmost respect paid to those who have given the ultimate sacrifice and those wounded in battle.”";
+        const appendTo2a = "The Atlantic’s report that he referred to US Marines killed during World War I as “losers” and “suckers.”";
         const appendText2 = '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Via <a href="https://twitter.com/fitsnews?ref_src=twsrc%5Etfw">@fitsnews</a>: “Donald Trump: John McCain Is ‘A Loser’” <a href="http://t.co/sgiETvdUqi">http://t.co/sgiETvdUqi</a></p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/622522682245033984?ref_src=twsrc%5Etfw">July 18, 2015</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
 
         const prependTo = "Our group was spit on";
         const prependText = "[Adam- Make up some fake shit about how you and your \"coworker\'s\" lives were threatened. Say you were \"desperate for help.\" Work the gullible idiots into a lather, lololol!!!] ";
+
+        const prependTo2 = "Blasting the magazine’s sources, Trump said";
+        const prependText2 = '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">This former official heard the President say about American veterans: &quot;What&#39;s in it for them? They don&#39;t make any money.&quot; Source: &quot;It was a character flaw of the President. He could not understand why someone would die for their country, not worth it.&quot;</p>&mdash; Jennifer Griffin (@JenGriffinFNC) <a href="https://twitter.com/JenGriffinFNC/status/1301975323374948354?ref_src=twsrc%5Etfw">September 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> ';
+
+        const prependTo3 = "The White House produced an email indicating there was a “bad weather call”";
+        const prependText3 = '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">According to one former senior Trump administration official: &quot;When the President spoke about the Vietnam War, he said, &#39;It was a stupid war. Anyone who went was a sucker&#39;.&quot;</p>&mdash; Jennifer Griffin (@JenGriffinFNC) <a href="https://twitter.com/JenGriffinFNC/status/1301975322397741057?ref_src=twsrc%5Etfw">September 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
+
+
+        const appendTo3 = "Trump told reporters that his current chief of staff, Mark Meadows, “is doing a great job, but Kelly was unable to do that.”";
+        const appendText3a = '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">5/9 For the first time in American history, a president has repeatedly shown utter and vulgar contempt and disrespect for those who have served and died serving our country.</p>&mdash; Sully Sullenberger (@Captsully) <a href="https://twitter.com/Captsully/status/1301998164988301312?ref_src=twsrc%5Etfw">September 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> ';
+        const appendText3b = '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">6/9 While I am not surprised, I am disgusted by the current occupant of the Oval Office. He has repeatedly and consistently shown himself to be completely unfit for and to have no respect for the office he holds.</p>&mdash; Sully Sullenberger (@Captsully) <a href="https://twitter.com/Captsully/status/1301998166036877313?ref_src=twsrc%5Etfw">September 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  ';
+        const appendText3c = '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">7/9 He took an oath of office that is similar to the one that each person takes who enters the U.S. Military. But he has completely failed to uphold his oath.<br><br>Now we know why. He has admitted that he cannot comprehend the concept of service above self.</p>&mdash; Sully Sullenberger (@Captsully) <a href="https://twitter.com/Captsully/status/1301998167030890505?ref_src=twsrc%5Etfw">September 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> ';
+        const appendText3d = '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">8/9 He cannot understand selflessness because he is selfish. He cannot conceive of courage because he is a coward. He cannot feel duty because he is disloyal.</p>&mdash; Sully Sullenberger (@Captsully) <a href="https://twitter.com/Captsully/status/1301998168192757772?ref_src=twsrc%5Etfw">September 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> ';
+        const appendText3e = '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">9/9 We owe it not only to those who have served and sacrificed for our nation, but to ourselves and to succeeding generations to vote him out. <a href="https://t.co/REXXzg90Pw">https://t.co/REXXzg90Pw</a> <a href="https://twitter.com/JeffreyGoldberg?ref_src=twsrc%5Etfw">@JeffreyGoldberg</a> <a href="https://twitter.com/TheAtlantic?ref_src=twsrc%5Etfw">@TheAtlantic</a></p>&mdash; Sully Sullenberger (@Captsully) <a href="https://twitter.com/Captsully/status/1301998169102917634?ref_src=twsrc%5Etfw">September 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> ';
+
+        const appendTo4 = "The same official told Fox News the president would often say of American veterans, \"What's in it for them? They don't make any money.\""
+        const appendText4 = '<p><strong><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Two former sr Trump admin officials confirm .<a href="https://twitter.com/JeffreyGoldberg?ref_src=twsrc%5Etfw">@JeffreyGoldberg</a> reporting that President Trump disparaged veterans and did not want to drive to honor American war dead at Aisne-Marne Cemetery outside Paris.</p>&mdash; Jennifer Griffin (@JenGriffinFNC) <a href="https://twitter.com/JenGriffinFNC/status/1301975321495973889?ref_src=twsrc%5Etfw">September 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></strong> '
 
 
         var i;
@@ -378,7 +397,15 @@
             // custom text
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo, appendTo + appendText);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo2, appendTo2 + appendText2);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo2a, appendTo2a + appendText2);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo3, appendTo3 + appendText3a + appendText3b + appendText3c + appendText3d + appendText3e);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo4, appendTo4 + appendText4);
+
+
             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo, prependText + prependTo);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo2, prependText2 + prependTo2);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo3, prependText3 + prependTo3);
+            //docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo4, prependText4 + prependTo4);
             // end custom text
         }
 
