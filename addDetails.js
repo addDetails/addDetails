@@ -153,6 +153,7 @@
         const dccb = /Dem City Crime Boom/i;
         const cv = /China Virus/i;
         const cbm = /Cheat-By-Mail/i;
+        const WATCH = /WATCH:/g;
 
         const krDesc = ["$& (not believed to be a member of any police force or military organization)",
                         "$& (who has no training or credentials in policing)",
@@ -411,6 +412,10 @@
             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo3, prependText3 + prependTo3);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo4, prependText4 + prependTo4);
             // end custom text
+        }
+
+        if (document.getElementById("post-body-text") !== null && document.getElementById("post-body-text") !== undefined) {
+            document.getElementById("post-body-text").innerHTML = document.getElementById("post-body-text").innerHTML.replace(/WATCH:/g, "")
         }
 
         //document.body.style.border = "15px solid blue";
