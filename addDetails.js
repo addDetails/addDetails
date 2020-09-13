@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         addDetails
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.2
+// @version      0.3.1
 // @description  Adds additional details to websites.
 // @author       addDetails
 // @match        *://*.spectator.org/*
