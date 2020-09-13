@@ -1,11 +1,9 @@
 // ==UserScript==
 // @name         addDetails
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.3
+// @version      0.2
 // @description  Adds additional details to websites.
 // @author       addDetails
-// @downloadURL  https://raw.githubusercontent.com/addDetails/addDetails/master/addDetails.js
-// @updateURL    https://raw.githubusercontent.com/addDetails/addDetails/master/addDetails.js
 // @match        *://*.spectator.org/*
 // @match        *://*.breitbart.com/*
 // @match        *://*.theblaze.com/*
@@ -519,7 +517,6 @@
 
     };
 
-    window.onload();
     addDetails();
 
 
