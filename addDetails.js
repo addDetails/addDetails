@@ -482,7 +482,7 @@
 
     var oldHref = document.location.href;
 
-    window.onload = function() {
+    function doReload() {
 
         var bodyList = document.querySelector("body"),
             observer = new MutationObserver(function(mutations) {
@@ -517,7 +517,12 @@
 
     };
 
+
+
+   // window.onload();
     addDetails();
+
+    window.onload = doReload;
 
 
 
