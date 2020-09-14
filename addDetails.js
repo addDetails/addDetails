@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         addDetails
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.3.2
+// @version      0.3.3
 // @description  Adds additional details to websites.
 // @author       addDetails
 // @downloadURL  https://raw.githubusercontent.com/addDetails/addDetails/master/addDetails.js
@@ -152,7 +152,7 @@
         const riots = /\briots\b/i;
         const rioters = /\brioters\b/i;
         const nursing = /forcing nursing homes to admit COVID-positive patients/i;
-        const dccb = /Dem City Crime Boom/i;
+        const dccb = /(Dem City Crime Boom|Democrat City Protests)/i;
         const cv = /China Virus/i;
         const cbm = /Cheat-By-Mail/i;
         const WATCH = /WATCH:/g;
