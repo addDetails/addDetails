@@ -153,6 +153,7 @@
         const rioters = /\brioters\b/i;
         const nursing = /forcing nursing homes to admit COVID-positive patients/i;
         const dccb = /(Dem City Crime Boom|Democrat City Protests|Democrat City Unrest)/i;
+        const bfb = /(Brain Freeze Biden)/i;
         const cv = /China Virus/i;
         const cbm = /Cheat-By-Mail/i;
         const WATCH = /WATCH:/g;
@@ -477,6 +478,7 @@
             document.getElementById("menu-trending").innerHTML = document.getElementById("menu-trending").innerHTML.replace(dccb, "Trump Era Crime Boom");
             document.getElementById("menu-trending").innerHTML = document.getElementById("menu-trending").innerHTML.replace(cv, "Coronavirus");
             document.getElementById("menu-trending").innerHTML = document.getElementById("menu-trending").innerHTML.replace(cbm, "Vote-By-Mail");
+            document.getElementById("menu-trending").innerHTML = document.getElementById("menu-trending").innerHTML.replace(bfb, "Vice President Biden");
         }
 
         //document.body.style.border = "15px solid white";
