@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         addDetails
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.3.3
+// @version      0.3.4
 // @description  Adds additional details to websites.
 // @author       addDetails
 // @downloadURL  https://raw.githubusercontent.com/addDetails/addDetails/master/addDetails.js
