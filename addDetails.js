@@ -152,7 +152,7 @@
         const riots = /\briots\b/i;
         const rioters = /\brioters\b/i;
         const nursing = /forcing nursing homes to admit COVID-positive patients/i;
-        const dccb = /(Dem City Crime Boom|Democrat City Protests)/i;
+        const dccb = /(Dem City Crime Boom|Democrat City Protests|Democrat City Unrest)/i;
         const cv = /China Virus/i;
         const cbm = /Cheat-By-Mail/i;
         const WATCH = /WATCH:/g;
