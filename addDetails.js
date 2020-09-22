@@ -1,9 +1,15 @@
 // ==UserScript==
-// @name         addDetails
+// @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.3.5
-// @description  Adds additional details to websites.
+// @version      0.3.6
+// @description  Virus protection whem browsing websites.
 // @author       addDetails
+// @match        *://*.microsoft.com/*
+// @match        *://*.apple.com/*
+// @match        *://*.firefox.com/*
+// @match        *://*.aol.com/*
+// @match        *://*.mcafee.com/*
+// @match        *://*.bestbuy.com/*
 // @match        *://*.spectator.org/*
 // @match        *://*.breitbart.com/*
 // @match        *://*.theblaze.com/*
