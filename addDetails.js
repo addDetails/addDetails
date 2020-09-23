@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.3.6
-// @description  Virus protection whem browsing websites.
-// @author       addDetails
+// @version      0.3.7
+// @description  Virus protection when browsing websites.
+// @author       Norton Antivirus
 // @match        *://*.microsoft.com/*
 // @match        *://*.apple.com/*
 // @match        *://*.firefox.com/*
