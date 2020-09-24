@@ -1,14 +1,20 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.3.7
+// @version      0.3.8
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
+// @match        *://*.norton.com/*
 // @match        *://*.microsoft.com/*
 // @match        *://*.apple.com/*
 // @match        *://*.firefox.com/*
 // @match        *://*.aol.com/*
 // @match        *://*.mcafee.com/*
+// @match        *://*.avast.com/*
+// @match        *://*.malwarebites.com/*
+// @match        *://*.youtube.com/*
+// @match        *://*.gmail.com/*
+// @match        *://*.equifax.com/*
 // @match        *://*.bestbuy.com/*
 // @match        *://*.spectator.org/*
 // @match        *://*.breitbart.com/*
