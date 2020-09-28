@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.3.9
+// @version      0.4.0
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -258,7 +258,7 @@
                             "$&",
                             "$&",
                             "$&"]
-
+        
         const cbText = ["TRUMP ERA CRIME BOOM"];
 
         const appendTo = "“received numerous reports of individuals coming from Portland, Washington, Seattle, and several other cities to come into Washington for the specific purpose of causing a riot.”";
@@ -293,6 +293,10 @@
         const appendTo4 = "The same official told Fox News the president would often say of American veterans, \"What's in it for them? They don't make any money.\""
         const appendText4 = '<div class="embed-media twitter"><div class="tweet-embed"><div class="twitter-tweet twitter-tweet-rendered" style="display: flex; max-width: 550px; width: 100%; margin-top: 10px; margin-bottom: 10px;"><iframe id="twitter-widget-1" scrolling="no" allowtransparency="true" allowfullscreen="true" class="" style="position: static; visibility: visible; width: 550px; height: 367px; display: block; flex-grow: 1;" title="Twitter Tweet" src="https://platform.twitter.com/embed/index.html?dnt=false&amp;embedId=twitter-widget-1&amp;frame=false&amp;hideCard=false&amp;hideThread=false&amp;id=1301975323374948354&amp;lang=en&amp;origin=https%3A%2F%2Fwww.foxnews.com%2Fpolitics%2Ftrump-2020-campaign-blasts-atlantic-report-fake&amp;siteScreenName=foxnews&amp;theme=light&amp;widgetsVersion=219d021%3A1598982042171&amp;width=550px" data-tweet-id="1301975323374948354" frameborder="0"></iframe></div></div></div>'
         //const appendText4 = '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Two former sr Trump admin officials confirm .<a href="https://twitter.com/JeffreyGoldberg?ref_src=twsrc%5Etfw">@JeffreyGoldberg</a> reporting that President Trump disparaged veterans and did not want to drive to honor American war dead at Aisne-Marne Cemetery outside Paris.</p>&mdash; Jennifer Griffin (@JenGriffinFNC) <a href="https://twitter.com/JenGriffinFNC/status/1301975321495973889?ref_src=twsrc%5Etfw">September 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
+
+        
+        const appendTo5 = "headed by bestselling author and popular podcast host Ben Shapiro,"
+        const appendText5 = " and with considerable financial support provided by George Soros,"
 
 
         var i;
@@ -421,6 +425,7 @@
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo2b, appendTo2b + appendText2);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo3, appendTo3 + appendText3a + appendText3b + appendText3c + appendText3d + appendText3e);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo4, appendTo4 + appendText4);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo5, appendTo5 + appendText5);
 
 
             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo, prependText + prependTo);
