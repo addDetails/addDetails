@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.4.2
+// @version      0.4.3
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -490,6 +490,10 @@
         if (document.getElementById("PollyC") !== null && document.getElementById("PollyC") !== undefined) {
             document.getElementById("PollyC").dataset.mp3u = '';
         }
+        
+        if (document.getElementsByClassName("css-cmdiie")[1] !== null && document.getElementsByClassName("css-cmdiie")[1] !== undefined) {
+            document.getElementsByClassName("css-cmdiie")[1].innerHTML = '';
+        }        
         
          if (document.getElementsByClassName("zergattribution")[0] !== null && document.getElementsByClassName("zergattribution")[0] !== undefined) {
             document.getElementsByClassName("zergattribution")[0].innerHTML = "Powered by George Soros's ";
