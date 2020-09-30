@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.4.1
+// @version      0.4.2
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -65,7 +65,7 @@
         return result;
     }
     
-    // 0.4.1
+    // 0.4.2
 
     function addDetails() {
         //document.body.style.border = "15px solid red";
@@ -490,6 +490,12 @@
         if (document.getElementById("PollyC") !== null && document.getElementById("PollyC") !== undefined) {
             document.getElementById("PollyC").dataset.mp3u = '';
         }
+        
+         if (document.getElementsByClassName("zergattribution")[0] !== null && document.getElementsByClassName("zergattribution")[0] !== undefined) {
+            document.getElementsByClassName("zergattribution")[0].innerHTML = "Powered by George Soros's ";
+        }
+        
+        document.getElementsByClassName("zergattribution")[0].innerHTML
 
         if (document.getElementById("menu-trending") !== null && document.getElementById("menu-trending") !== undefined) {
             document.getElementById("menu-trending").innerHTML = document.getElementById("menu-trending").innerHTML.replace(dccb, "Trump Era Crime Boom");
