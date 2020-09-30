@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.4.8
+// @version      0.4.9
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -308,7 +308,7 @@
         }
         
           if(window.location.host == "www.dailywire.com") {
-              document.querySelectorAll('p')[1] = document.querySelectorAll('p')[1].replace(/<.p>/i/, '</p><iframe width="680" height="383" src="https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=UUpYCxV51bykhMY-wSUozQRg;rel=0;autoplay=1;modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+              document.querySelectorAll('p')[1] = document.querySelectorAll('p')[1].replace('</p>', '</p><iframe width="680" height="383" src="https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=UUpYCxV51bykhMY-wSUozQRg;rel=0;autoplay=1;modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
         }
 
         var i;
