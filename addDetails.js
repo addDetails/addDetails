@@ -303,20 +303,21 @@
         
          if(window.location.host == "nypost.com") {
              if(document.getElementsByClassName("nyp-brightcove-player")[0] !== null && document.getElementsByClassName("nyp-brightcove-player")[0] !== undefined) {
-            docHead.innerHTML = docHead.innerHTML.replace(docHead.innerHTML, docHead.innerHTML + 
-                                                          '<script>' +
-                                                          'var videos = ["https://www.youtube.com/embed/9bZkp7q19f0", "https://www.youtube.com/embed/dQw4w9WgXcQ"];' +
-                                                         'window.onload = function () {' + 
-                                                         'var playerDiv = document.getElementById("random_player");' + 
-                                                         'var player = document.createElement("IFRAME");' + 
-                                                          'var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];' + 
-                                                          "player.setAttribute('width', '618px');" + 
-                                                          "player.setAttribute('height', '347.617px');" +
-                                                          "player.setAttribute('src', randomVideoUrl);" +
-                                                          'playerDiv.appendChild(player);' +
-                                                          "};" + 
-                                                          '</script>');
-             document.getElementsByClassName("nyp-brightcove-player")[0].innerHTML = '<div id="random_player" />';
+            //docHead.innerHTML = docHead.innerHTML.replace(docHead.innerHTML, docHead.innerHTML + 
+              //                                            '<script>' +
+                //                                          'var videos = ["https://www.youtube.com/embed/9bZkp7q19f0", "https://www.youtube.com/embed/dQw4w9WgXcQ"];' +
+                  //                                       'window.onload = function () {' + 
+                    //                                     'var playerDiv = document.getElementById("random_player");' + 
+                      //                                   'var player = document.createElement("IFRAME");' + 
+                        //                                  'var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];' + 
+                          //                                "player.setAttribute('width', '618px');" + 
+                            //                              "player.setAttribute('height', '347.617px');" +
+                              //                            "player.setAttribute('src', randomVideoUrl);" +
+                                //                          'playerDiv.appendChild(player);' +
+                                  //                        "};" + 
+                                    //                      '</script>');
+             //document.getElementsByClassName("nyp-brightcove-player")[0].innerHTML = '<div id="random_player" />';
+                 document.getElementsByClassName("nyp-brightcove-player")[0].innerHTML = '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=PLPbECI-Q45We2gWzONikQgOky4w9bfBHg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
              }
         }
 
