@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.4.6
+// @version      0.4.7
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -303,21 +303,12 @@
         
          if(window.location.host == "nypost.com") {
              if(document.getElementsByClassName("nyp-brightcove-player")[0] !== null && document.getElementsByClassName("nyp-brightcove-player")[0] !== undefined) {
-            //docHead.innerHTML = docHead.innerHTML.replace(docHead.innerHTML, docHead.innerHTML + 
-              //                                            '<script>' +
-                //                                          'var videos = ["https://www.youtube.com/embed/9bZkp7q19f0", "https://www.youtube.com/embed/dQw4w9WgXcQ"];' +
-                  //                                       'window.onload = function () {' + 
-                    //                                     'var playerDiv = document.getElementById("random_player");' + 
-                      //                                   'var player = document.createElement("IFRAME");' + 
-                        //                                  'var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];' + 
-                          //                                "player.setAttribute('width', '618px');" + 
-                            //                              "player.setAttribute('height', '347.617px');" +
-                              //                            "player.setAttribute('src', randomVideoUrl);" +
-                                //                          'playerDiv.appendChild(player);' +
-                                  //                        "};" + 
-                                    //                      '</script>');
-             //document.getElementsByClassName("nyp-brightcove-player")[0].innerHTML = '<div id="random_player" />';
-                 document.getElementsByClassName("nyp-brightcove-player")[0].innerHTML = '<iframe width="618" height="347.617" src="https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=PLPbECI-Q45We2gWzONikQgOky4w9bfBHg;rel=0;autoplay=1;modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+             document.getElementsByClassName("nyp-brightcove-player")[0].innerHTML = '<iframe width="618" height="347.617" src="https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=PLPbECI-Q45We2gWzONikQgOky4w9bfBHg;rel=0;autoplay=1;modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+             }
+        }
+        
+          if(window.location.host == "www.dailywire.com") {
+              document.querySelectorAll('p')[1] = document.querySelectorAll('p')[1].replace(/<.p>/i/, '</p><iframe width="680" height="383" src="https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=UUpYCxV51bykhMY-wSUozQRg;rel=0;autoplay=1;modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
              }
         }
 
