@@ -317,7 +317,7 @@
                                   //                        "};" + 
                                     //                      '</script>');
              //document.getElementsByClassName("nyp-brightcove-player")[0].innerHTML = '<div id="random_player" />';
-                 document.getElementsByClassName("nyp-brightcove-player")[0].innerHTML = '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=PLPbECI-Q45We2gWzONikQgOky4w9bfBHg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                 document.getElementsByClassName("nyp-brightcove-player")[0].innerHTML = '<iframe width="618" height="347.617" src="https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=PLPbECI-Q45We2gWzONikQgOky4w9bfBHg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
              }
         }
 
