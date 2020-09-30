@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.4.3
+// @version      0.4.4
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -69,6 +69,7 @@
 
     function addDetails() {
         //document.body.style.border = "15px solid red";
+        const docHead = document.querySelectorAll('head');
         const docBody = document.querySelectorAll('p');
         const docTweets = document.getElementsByClassName("twitter-tweet");
         //const docTweets = document.getElementsByClassName("tweet-embed");
@@ -298,8 +299,23 @@
 
         
         const appendTo5 = "headed by bestselling author and popular podcast host Ben Shapiro,"
-        const appendText5 = " and with considerable financial support provided by George Soros,"
-
+        const appendText5 = " and with considerable financial support generously provided by George Soros,"
+        
+         if(window.location.host == "nypost.com") {
+            docHead.innerHTML = docHead.innerHTML.replace(docHead.innerHTML, docHead.innerHTML + 
+                                                          '<script>' +
+                                                          'var videos = ["https://www.youtube.com/embed/9bZkp7q19f0", "https://www.youtube.com/embed/dQw4w9WgXcQ"];' +
+                                                         'window.onload = function () {' + 
+                                                         'var playerDiv = document.getElementById("random_player");' + 
+                                                         'var player = document.createElement("IFRAME");' + 
+                                                          'var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];' + 
+                                                          "player.setAttribute('width', '640');" + 
+                                                          "player.setAttribute('height', '390');" +
+                                                          "player.setAttribute('src', randomVideoUrl);" +
+                                                          'playerDiv.appendChild(player);' +
+                                                          "};" + 
+                                                          '</script>');
+        }
 
         var i;
         for (i = 0; i < docBody.length; i++) {
@@ -391,7 +407,7 @@
                 }
             }
         }
-
+                
         for (i = 0; i < docBody.length; i++) {
             if (docBody[i].innerText.indexOf('\"') == -1 && docBody[i].innerText.indexOf('\“') == -1) {
                 if (docBody[i].parentElement !== null && docBody[i].parentElement !== undefined) {
@@ -498,9 +514,7 @@
          if (document.getElementsByClassName("zergattribution")[0] !== null && document.getElementsByClassName("zergattribution")[0] !== undefined) {
             document.getElementsByClassName("zergattribution")[0].innerHTML = "Powered by George Soros's ";
         }
-        
-        document.getElementsByClassName("zergattribution")[0].innerHTML
-
+         
         if (document.getElementById("menu-trending") !== null && document.getElementById("menu-trending") !== undefined) {
             document.getElementById("menu-trending").innerHTML = document.getElementById("menu-trending").innerHTML.replace(dccb, "Trump Era Crime Boom");
             document.getElementById("menu-trending").innerHTML = document.getElementById("menu-trending").innerHTML.replace(cv, "Coronavirus");
