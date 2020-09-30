@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.4.0
+// @version      0.4.1
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -64,6 +64,8 @@
         }
         return result;
     }
+    
+    // 0.4.1
 
     function addDetails() {
         //document.body.style.border = "15px solid red";
