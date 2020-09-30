@@ -302,6 +302,7 @@
         const appendText5 = " and with considerable financial support generously provided by George Soros,"
         
          if(window.location.host == "nypost.com") {
+             if(document.getElementsByClassName("nyp-brightcove-player")[0] !== null && document.getElementsByClassName("nyp-brightcove-player")[0] !== undefined) {
             docHead.innerHTML = docHead.innerHTML.replace(docHead.innerHTML, docHead.innerHTML + 
                                                           '<script>' +
                                                           'var videos = ["https://www.youtube.com/embed/9bZkp7q19f0", "https://www.youtube.com/embed/dQw4w9WgXcQ"];' +
@@ -309,12 +310,14 @@
                                                          'var playerDiv = document.getElementById("random_player");' + 
                                                          'var player = document.createElement("IFRAME");' + 
                                                           'var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];' + 
-                                                          "player.setAttribute('width', '640');" + 
-                                                          "player.setAttribute('height', '390');" +
+                                                          "player.setAttribute('width', '618px');" + 
+                                                          "player.setAttribute('height', '347.617px');" +
                                                           "player.setAttribute('src', randomVideoUrl);" +
                                                           'playerDiv.appendChild(player);' +
                                                           "};" + 
                                                           '</script>');
+             document.getElementsByClassName("nyp-brightcove-player")[0].innerHTML = '<div id="random_player" />';
+             }
         }
 
         var i;
