@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.5.7
+// @version      0.5.8
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -302,9 +302,16 @@
         const appendText5 = " and with considerable financial support generously provided by George Soros,"
         
          if(window.location.host == "nypost.com") {
+             if(document.getElementsByClassName("tag-list") !== null && document.getElementsByClassName("tag-list") !== undefined) {
+             if(document.getElementsByClassName("tag-list")[0].innerHTML.includes("donald trump") ||
+               document.getElementsByClassName("tag-list")[0].innerHTML.includes("Donald Trump") ||
+               document.getElementsByClassName("tag-list")[0].innerHTML.includes("2020 presidential election") || 
+               document.getElementsByClassName("tag-list")[0].innerHTML.includes("2020 Presidential Election")) {
              if(document.getElementsByClassName("nyp-brightcove-player")[0] !== null && document.getElementsByClassName("nyp-brightcove-player")[0] !== undefined) {
              document.getElementsByClassName("nyp-brightcove-player")[0].innerHTML = '<iframe width="618" height="347.617" src="https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=PLPbECI-Q45We2gWzONikQgOky4w9bfBHg;rel=0;autoplay=1;modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
              }
+             }
+         }
         }
         
           if(window.location.host == "www.dailywire.com") {
