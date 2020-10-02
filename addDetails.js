@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.6.1
+// @version      0.6.2
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -345,9 +345,13 @@
                             docBody[i].outerHTML = docBody[i].outerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
                             docBody[i].innerText = docBody[i].innerText.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
                             docBody[i].innerHTML = docBody[i].innerHTML.replace(WOIC, nWOIC);
+                            docBody[i].outerHTML = docBody[i].outerHTML.replace(WOIC, nWOIC);
+                            docBody[i].innerText = docBody[i].innerText.replace(WOIC, nWOIC);
 
                             //kr
                             docBody[i].innerHTML = docBody[i].innerHTML.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
+                            docBody[i].outerHTML = docBody[i].outerHTML.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
+                            docBody[i].innerText = docBody[i].innerText.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
                             //end kr
 
                             //np
@@ -359,10 +363,14 @@
                     docBody[i].innerHTML = docBody[i].innerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
                     docBody[i].outerHTML = docBody[i].outerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
                     docBody[i].innerText = docBody[i].innerText.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
-                    docBody[i].innerHTML = docBody[i].innerHTML.replace(WOIC, nWOIC);
+                            docBody[i].innerHTML = docBody[i].innerHTML.replace(WOIC, nWOIC);
+                            docBody[i].outerHTML = docBody[i].outerHTML.replace(WOIC, nWOIC);
+                            docBody[i].innerText = docBody[i].innerText.replace(WOIC, nWOIC);
 
                     //kr
                     docBody[i].innerHTML = docBody[i].innerHTML.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
+                    docBody[i].outerHTML = docBody[i].outerHTML.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
+                    docBody[i].innerText = docBody[i].innerText.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
                     // end kr
 
                     //np
