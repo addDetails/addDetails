@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.6.0
+// @version      0.6.1
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -344,6 +344,7 @@
                             docBody[i].innerHTML = docBody[i].innerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
                             docBody[i].outerHTML = docBody[i].outerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
                             docBody[i].innerText = docBody[i].innerText.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
+                            docBody[i].innerHTML = docBody[i].innerHTML.replace(WOIC, nWOIC);
 
                             //kr
                             docBody[i].innerHTML = docBody[i].innerHTML.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
@@ -358,6 +359,7 @@
                     docBody[i].innerHTML = docBody[i].innerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
                     docBody[i].outerHTML = docBody[i].outerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
                     docBody[i].innerText = docBody[i].innerText.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
+                    docBody[i].innerHTML = docBody[i].innerHTML.replace(WOIC, nWOIC);
 
                     //kr
                     docBody[i].innerHTML = docBody[i].innerHTML.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
@@ -425,7 +427,6 @@
                     if (docBody[i].parentElement.localName != "blockquote") {
                         docBody[i].innerHTML = docBody[i].innerHTML.replace(riots, riotsTxt[Math.floor(Math.random()*riotsTxt.length)]);
                         docBody[i].innerHTML = docBody[i].innerHTML.replace(nursing, nursingTxt[Math.floor(Math.random()*nursingTxt.length)]);
-                        docBody[i].innerHTML = docBody[i].innerHTML.replace(WOIC, nWOIC);
                     }
                 }
             }
