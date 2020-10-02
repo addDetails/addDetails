@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.5.9
+// @version      0.6.0
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -170,6 +170,7 @@
         const cv = /China Virus/i;
         const cbm = /Cheat-By-Mail/i;
         const WATCH = /WATCH:/g;
+        const WOIC = /, which originated in China,/i;
 
         const krDesc = ["$& (not believed to be a member of any police force or military organization)",
                         "$& (who has no training or credentials in policing)",
@@ -181,6 +182,8 @@
                         "$& (violating curfew at the time of the incident)",
                         "$& (who, fortunately, did not target any plainclothes officers)",
                         "$& (whose presence in Kenosha likely served to escalate, rather than reduce, tensions)"]
+        
+        const nWOIC = "";
 
         //const npDesc = "$& (in the interest of fair and balanced reporting)");
 
@@ -422,7 +425,7 @@
                     if (docBody[i].parentElement.localName != "blockquote") {
                         docBody[i].innerHTML = docBody[i].innerHTML.replace(riots, riotsTxt[Math.floor(Math.random()*riotsTxt.length)]);
                         docBody[i].innerHTML = docBody[i].innerHTML.replace(nursing, nursingTxt[Math.floor(Math.random()*nursingTxt.length)]);
-
+                        docBody[i].innerHTML = docBody[i].innerHTML.replace(WOIC, nWOIC);
                     }
                 }
             }
