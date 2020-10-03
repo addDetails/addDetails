@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.6.2
+// @version      0.6.3
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -127,9 +127,9 @@
             "$& (<a href='https://en.wikipedia.org/wiki/Veracity_of_statements_by_Donald_Trump' target='_blank'>who has told over 20,000 lies as President</a>)",
             "$& (<a href='https://www.ipsos.com/en-us/news-polls/abc-Trump-Biden-protest' target='_blank'>who most Americans believe have made the protests worse</a>)",
             "$& (<a href='https://www.transparency.org/en/cpi/2019/results/usa' target='_blank'>who is perceived as having made the U.S. government more corrupt</a>)",
-            "$& (<a href='https://www.youtube.com/watch?v=LUwnus4DulA&t=25s' target='_blank'>who promised in 2016 that he would put an end to crime and violence \"very soon\"</a>)",
-            "$& (<a href='https://www.youtube.com/watch?v=oe3QeX5RTUs' target='_blank'>who, in 2016, claimed that \"beginning on January 20th of 2017, safety will be restored\"</a>)",
-            "$& (<a href='https://www.youtube.com/watch?v=oe3QeX5RTUs' target='_blank'>whose 2016 proclamation that \"...any government that fails to [defend the lives of its citizens] is a government unworthy to lead\" did not appear to age well given his recent comment, \"it is what it is,\" in response to COVID-19 deaths</a>)",
+            "$& (<a href='https://www.youtube.com/watch?v=LUwnus4DulA&t=25s' target='_blank'>who promised in 2016 that he would put an end to crime and violence “very soon”</a>)",
+            "$& (<a href='https://www.youtube.com/watch?v=oe3QeX5RTUs' target='_blank'>who, in 2016, claimed that “beginning on January 20th of 2017, safety will be restored”</a>)",
+            "$& (<a href='https://www.youtube.com/watch?v=oe3QeX5RTUs' target='_blank'>whose 2016 proclamation that “...any government that fails to [defend the lives of its citizens] is a government unworthy to lead” did not appear to age well given his recent comment, \"it is what it is,\" in response to COVID-19 deaths</a>)",
             "$& (<a href='https://news.yahoo.com/trump-envisioned-american-carnage-now-180247583.html' target='_blank'>who, four years ago, claimed that he would put an end to \"carnage\" in America</a>)",
             "$& (<a href='https://freedomhouse.org/report/freedom-world/2019/democracy-retreat' target='_blank'>whose presidency thus far has reportedly made U.S. citizens less free</a>)",
             //"$& (<a href='https://www.businessinsider.com/trump-pence-gop-law-order-for-others-but-not-associates-2020-8' target='_blank'>whose \"law-and-order\" campaign messaging appears to be in direct contradition to the dozens of laws that he -- and those working for him -- have broken</a>)",
@@ -140,8 +140,8 @@
             "$& (<a href='https://blogs.timesofisrael.com/trump-benefits-from-violent-protests/' target='_blank'>who has ushered in an uncharacteristically violent and polarized four years in modern America</a>)",
             "$& (<a href='https://news.yahoo.com/5-ways-donald-trump-failed-drain-swamp-100013259.html' target='_blank'>who has failed to 'drain the swamp,' as promised</a>)",
             "$& (<a href='https://ballotpedia.org/The_Republican_Party_Platform,_2020' target='_blank'>who is not campaigning on any new policy or legislative proposals</a>)",
-            "$& (<a href='https://twitter.com/realDonaldTrump/status/622522682245033984?s=20' target='_blank'>who referred to the late Senator John McCain as a \"loser\"</a>)",
-            "$& (<a href='https://dailyinterlake.com/news/2020/sep/02/gop-trump-campaign-sue-montana-over-all-mail-votin/' target='_blank'>who has taken a page out of the \"big government\" playbook by attempting to exert federal control over state elections, even though Constitution says that states are responsible for handling their own elections</a>)",
+            "$& (<a href='https://twitter.com/realDonaldTrump/status/622522682245033984?s=20' target='_blank'>who referred to the late Senator John McCain as a “loser”</a>)",
+            "$& (<a href='https://dailyinterlake.com/news/2020/sep/02/gop-trump-campaign-sue-montana-over-all-mail-votin/' target='_blank'>who has taken a page out of the “big government” playbook by attempting to exert federal control over state elections, even though Constitution says that states are responsible for handling their own elections</a>)",
             //"$& (<a href='https://www.artsy.net/article/artsy-editorial-dr-seuss-satirized-america-first-decades-donald-trump-made-policy' target='_blank'>who has more in common with Dr. Seuss than you think</a>)",
             "$& (<a href='https://www.politifact.com/truth-o-meter/promises/trumpometer/' target='_blank'>whose presidency has keep 24% of his campaign promises while breaking only 49% of his promises</a>)",
             "$& (<a href='https://abcnews.go.com/Politics/back-trump-comments-perceived-encouraging-violence/story?id=48415766' target='_blank'>who, rather than fulfilling his campaign promise to end violence, appears to be using the increased violence as an opportunity to agitate his supporters and further consolidate his power</a>)",
