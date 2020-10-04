@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.6.3
+// @version      0.6.4
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -109,7 +109,7 @@
             "$& (<a href='https://www.odmp.org/search/incident/covid-19' target='_blank'>whose failure to coordinate a national coronavirus response has made COVID-19 the #1 killer of blue lives in 2020</a>)",
             "$& (<a href='https://www.independent.co.uk/news/world/americas/us-election/trump-north-carolina-vote-twice-electoral-fraud-us-election-2020-a9702276.html' target='_blank'>who recently suggested that people should attempt to vote twice -- which would constitute illegal voter fraud -- in the 2020 Presidential election</a>)",
             "$& (<a href='https://www.wsj.com/articles/russian-dissident-navalny-poisoned-with-novichok-nerve-agent-germany-says-11599055910' target='_blank'>who has neither criticized nor sanctioned Russian president Vladimir Putin for poisoning one of his top political opponents</a>)",
-            "$& (<a href='https://fivethirtyeight.com/features/trump-may-have-gotten-a-convention-bounce-but-its-very-slight-and-may-already-be-fading/' target='_blank'>whose poll numbers have not risen as much as expected after the Republican National Convention</a>)",
+            "$& (<a href='https://fivethirtyeight.com/features/trump-may-have-gotten-a-convention-bounce-but-its-very-slight-and-may-already-be-fading/' target='_blank'>whose poll numbers did not rise as much as expected after the Republican National Convention</a>)",
             "$& (<a href='https://www.opensecrets.org/trump/trump-properties' target='_blank'>who, despite donating his Presidential salary, has found a way to rake in over 20 million dollars as President</a>)",
             "$& (<a href='https://www.newsandguts.com/trump-russia/' target='_blank'>who has been building secret diplomatic relations with Russia for over 35 years</a>)",
             //"$& (<a href='https://presidentialgolftracker.com/' target='_blank'>who has golfed much less than former President Woodrow Wilson</a>)",
