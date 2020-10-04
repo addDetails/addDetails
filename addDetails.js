@@ -78,7 +78,7 @@
         const strong = document.getElementsByTagName("strong");
 
         const allTheCrap = [
-            "$& (<a href='https://www.reuters.com/article/us-usa-trump-impeachment-gao/u-s-watchdog-says-trump-administration-violated-law-by-withholding-ukraine-aid-idUSKBN1ZF22Y' target='_blank'>who illegally pressured Ukraine into announcing an investigation into Joe Biden for Trump's personal political advantage</a>)",
+            "$& (<a href='https://www.reuters.com/article/us-usa-trump-impeachment-gao/u-s-watchdog-says-trump-administration-violated-law-by-withholding-ukraine-aid-idUSKBN1ZF22Y' target='_blank'>who illegally pressured Ukraine into announcing an investigation into Joe Biden to boost his chances of re-election</a>)",
             "$& (<a href='https://www.politico.com/story/2018/01/22/stormy-daniels-trump-payment-illegal-donation-357250' target='_blank'>who likely violated campaign finance laws when he paid adult film actress Stormy Daniels \$ 130,000 to keep an affair with Trump hidden from voters during the final months of the 2016 Presidential race</a>)",
             "$& (<a href='https://apnews.com/00b0910a5e331ead1da4569c48c06f74' target='_blank'>who has failed to release his tax returns despite telling the American people that he would</a>)",
             "$& (<a href='https://www.cheatsheet.com/money-career/trump-profiting-presidency.html/' target='_blank'>whose hotels and resorts have earned him millions of dollars of profit in taxpayer dollars during his presidency</a>)",
