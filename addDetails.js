@@ -326,7 +326,7 @@
                       document.getElementsByClassName("zergattribution")[0].innerHTML = "Powered by George Soros's ";
                   }
                   if(document.title.includes("LeBron James")) {
-                      docBody[1].innerHTML = docBody[1].innerHTML.replace(docBody[1].innerHTML, "Have you ever wondered why we're so fixated on LeBron James? Let us turn this question back on you: Why do you care so much about LeBron James? " + docBody[1].innerHTML)
+                      docBody[1].innerHTML = docBody[1].innerHTML.replace(docBody[1].innerHTML, "<i>Have you ever wondered why we're so fixated on LeBron James? Let us turn this question back on you: Why do you care so much about LeBron James?</i><br><br>" + docBody[1].innerHTML)
                   
                   }
               }
