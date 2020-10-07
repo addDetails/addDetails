@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.6.4
+// @version      0.6.5
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -321,7 +321,7 @@
               if(document.querySelectorAll('p')[1] !== null && document.querySelectorAll('p')[1] !== undefined) {
                   const nPar = document.querySelectorAll('p').length;
                   var putWhere = Math.ceil(nPar/2);
-                  //document.querySelectorAll('p')[putWhere].outerHTML = document.querySelectorAll('p')[putWhere].outerHTML.replace('</p>', "</p><p align='center'><iframe width='680' height='383' src='https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=UUpYCxV51bykhMY-wSUozQRg;rel=0;autoplay=1;modestbranding=1' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></p>");
+                  document.querySelectorAll('p')[putWhere].outerHTML = document.querySelectorAll('p')[putWhere].outerHTML.replace('</p>', "</p><p align='center'><iframe width='680' height='383' src='https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=UUpYCxV51bykhMY-wSUozQRg;rel=0;autoplay=1;modestbranding=1' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></p>");
                   if (document.getElementsByClassName("zergattribution")[0] !== null && document.getElementsByClassName("zergattribution")[0] !== undefined) {
                       document.getElementsByClassName("zergattribution")[0].innerHTML = "Powered by George Soros's ";
                   }
