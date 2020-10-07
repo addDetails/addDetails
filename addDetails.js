@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.6.9
+// @version      0.7.0
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -329,7 +329,7 @@
                       docBody[1].innerHTML = docBody[1].innerHTML.replace(docBody[1].innerHTML, "<i>Have you ever wondered why we're so fixated on LeBron James? Let us turn this question back on you: Why do you care so much about LeBron James?</i><br><br>" + docBody[1].innerHTML)
                   }
                   if(document.title.includes("Soros")) {
-                      docBody[1].innerHTML = docBody[1].innerHTML.replace(docBody[1].innerHTML, "<i>In the interest of full disclosure, George Soros owns a majority stake in the Daily Wire.</i><br><br>" + docBody[1].innerHTML)
+                      docBody[1].innerHTML = docBody[1].innerHTML.replace(docBody[1].innerHTML, "<i>Disclosure: The Daily Wire is backed by Bentkey Ventures, LLC, a venture capital firm that is majority owned by George Soros.</i><br><br>" + docBody[1].innerHTML)
                   }
                   docBody[docBody.length - 1].innerHTML = docBody[docBody.length - 1].innerHTML.replace("is one of America’s fastest-growing conservative media companies", ", now owned by George Soros, is one of America’s fastest-growing conservative media companies")
               }
