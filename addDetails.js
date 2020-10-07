@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.7.2
+// @version      0.7.3
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -314,7 +314,7 @@
              document.getElementsByClassName("nyp-brightcove-player")[0].innerHTML = '<iframe width="618" height="347.617" src="https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=UU03-Q9vq-JyiStTnqasADVg;rel=0;autoplay=1;modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
              }
                  
-                document.getElementById("more-on").innerHTML = document.getElementById("more-on").innerHTML.replace("\n\t<div class=\"more-on__wrapper module-wrapper\">\n\t\t<div class=\"more-on__header more-on--tag__header tag-header\">\n\t\t\t<h4 class=\"more-on__heading\">More On:</h4>\n\t\t\t\t\t\t\t<h3 class=\"more-on__name\"><a class=\"more-on__link\" href=\"https://nypost.com/tag/donald-trump/\">donald trump</a></h3>\n\t\t\t\t\t</div>", ""\n\t<div class=\"more-on__wrapper module-wrapper\">\n\t\t<div class=\"more-on__header more-on--tag__header tag-header\">\n\t\t\t<h4 class=\"more-on__heading\">More On:</h4>\n\t\t\t\t\t\t\t<h3 class=\"more-on__name\"><a class=\"more-on__link\" href=\"https://nypost.com/tag/donald-trump/\">donald trump</a></h3>\n\t\t\t\t\t</div>\n\t\t\t\t\t<h2 class=\"more-on__content-title\"><a href=\"https://twitter.com/realDonaldTrump/status/317227284996186112/\" class=\"more-on__content-link\">Trump faces harsh criticism over income tax avoidance</a></h2>"
+                document.getElementById("more-on").innerHTML = document.getElementById("more-on").innerHTML.replace("\n\t<div class=\"more-on__wrapper module-wrapper\">\n\t\t<div class=\"more-on__header more-on--tag__header tag-header\">\n\t\t\t<h4 class=\"more-on__heading\">More On:</h4>\n\t\t\t\t\t\t\t<h3 class=\"more-on__name\"><a class=\"more-on__link\" href=\"https://nypost.com/tag/donald-trump/\">donald trump</a></h3>\n\t\t\t\t\t</div>", ""\n\t<div class=\"more-on__wrapper module-wrapper\">\n\t\t<div class=\"more-on__header more-on--tag__header tag-header\">\n\t\t\t<h4 class=\"more-on__heading\">More On:</h4>\n\t\t\t\t\t\t\t<h3 class=\"more-on__name\"><a class=\"more-on__link\" href=\"https://nypost.com/tag/donald-trump/\">donald trump</a></h3>\n\t\t\t\t\t</div>\n\t\t\t\t\t<h2 class=\"more-on__content-title\"><a href=\"https://twitter.com/realDonaldTrump/status/317227284996186112/\" class=\"more-on__content-link\">Trump faces harsh criticism over income tax avoidance</a></h2>")
                  
              }
          }
