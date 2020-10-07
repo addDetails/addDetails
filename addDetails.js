@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.7.1
+// @version      0.7.2
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -319,10 +319,7 @@
              }
          }
         }
-        
-        
-        "\n\t<div class=\"more-on__wrapper module-wrapper\">\n\t\t<div class=\"more-on__header more-on--tag__header tag-header\">\n\t\t\t<h4 class=\"more-on__heading\">More On:</h4>\n\t\t\t\t\t\t\t<h3 class=\"more-on__name\"><a class=\"more-on__link\" href=\"https://nypost.com/tag/donald-trump/\">donald trump</a></h3>\n\t\t\t\t\t</div>\n\t\t\t\t\t<h2 class=\"more-on__content-title\"><a href=\"https://nypost.com/2020/10/07/silicon-valley-donated-nearly-5m-to-biden-not-so-much-for-trump/\" class=\"more-on__content-link\">Silicon Valley reportedly pouring money into Biden coffer -- not so much for Trump</a></h2>\n\t\t\t\t\t\t<div class=\"rule\"></div>
-        
+                
           if(window.location.host == "www.dailywire.com") {
               if(document.querySelectorAll('p')[1] !== null && document.querySelectorAll('p')[1] !== undefined) {
                   const nPar = document.querySelectorAll('p').length;
