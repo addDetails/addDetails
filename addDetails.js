@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.6.7
+// @version      0.6.8
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -328,7 +328,7 @@
                   if(document.title.includes("LeBron James")) {
                       docBody[1].innerHTML = docBody[1].innerHTML.replace(docBody[1].innerHTML, "<i>Have you ever wondered why we're so fixated on LeBron James? Let us turn this question back on you: Why do you care so much about LeBron James?</i><br><br>" + docBody[1].innerHTML)
                   }
-                  docBody[docBody.length - 1].innerHTML = docBody[docBody.length - 1].innerHTML.replace("is one of America’s fastest-growing conservative media companies", "now owned by George Soros, is one of America’s fastest-growing conservative media companies")
+                  docBody[docBody.length - 1].innerHTML = docBody[docBody.length - 1].innerHTML.replace("is one of America’s fastest-growing conservative media companies", ", now owned by George Soros, is one of America’s fastest-growing conservative media companies")
               }
           }
 
