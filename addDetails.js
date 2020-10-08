@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.7.9
+// @version      0.8.0
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -317,9 +317,10 @@
                 document.getElementById("more-on").innerHTML = document.getElementById("more-on").innerHTML.replace('\n\t<div class=\"more-on__wrapper module-wrapper\">\n\t\t<div class=\"more-on__header more-on--tag__header tag-header\">\n\t\t\t<h4 class=\"more-on__heading\">More On:</h4>\n\t\t\t\t\t\t\t<h3 class=\"more-on__name\"><a class=\"more-on__link\" href=\"https://nypost.com/tag/donald-trump/\">donald trump</a></h3>\n\t\t\t\t\t</div>', '"\n\t<div class=\"more-on__wrapper module-wrapper\">\n\t\t<div class=\"more-on__header more-on--tag__header tag-header\">\n\t\t\t<h4 class=\"more-on__heading\">More On:</h4>\n\t\t\t\t\t\t\t<h3 class=\"more-on__name\"><a class=\"more-on__link\" href=\"https://nypost.com/tag/donald-trump/\">donald trump</a></h3>\n\t\t\t\t\t</div>\n\t\t\t\t\t<h2 class=\"more-on__content-title\"><a href=\"https://twitter.com/realDonaldTrump/status/317227284996186112/\" class=\"more-on__content-link\">Trump faces harsh criticism over income tax avoidance</a></h2>\n\t\t\t\t\t<h2 class=\"more-on__content-title\"><a href=\"https://www.newsbreak.com/news/2047764052102/jim-jordan-claims-donald-trump-ran-a-mile-in-under-6-minutes-last-weekend/\" class=\"more-on__content-link\">Two days after hospital discharge, Trump runs 6-minute mile</a></h2>')
                  
              }
-         }
-             document.getElementById("more-on").innerHTML = document.getElementById("more-on").innerHTML.replace('\n\t<div class=\"more-on__wrapper module-wrapper\">\n\t\t<div class=\"more-on__header more-on--tag__header tag-header\">\n\t\t\t<h4 class=\"more-on__heading\">More On:</h4>\n\t\t\t\t\t\t\t<h3 class=\"more-on__name\"><a class=\"more-on__link\" href=\"https://nypost.com/coronavirus/\">coronavirus</a></h3>\n\t\t\t\t\t</div>', '"\n\t<div class=\"more-on__wrapper module-wrapper\">\n\t\t<div class=\"more-on__header more-on--tag__header tag-header\">\n\t\t\t<h4 class=\"more-on__heading\">More On:</h4>\n\t\t\t\t\t\t\t<h3 class=\"more-on__name\"><a class=\"more-on__link\" href=\"https://nypost.com/coronavirus/\">coronavirus</a></h3>\n\t\t\t\t\t</div>\n\t\t\t\t\t<h2 class=\"more-on__content-title\"><a href=\"https://www.worldometers.info/coronavirus/country/us/\" class=\"more-on__content-link\">COVID-19 Death Count: 216,763</a></h2>\n\t\t\t\t\t<h2 class=\"more-on__content-title\"><a href=\"https://www.newsbreak.com/news/2047764052102/jim-jordan-claims-donald-trump-ran-a-mile-in-under-6-minutes-last-weekend/\" class=\"more-on__content-link\">Two days after hospital discharge, Trump runs 6-minute mile</a></h2>')
-
+                 if(document.getElementsByClassName("tag-list")[0].innerHTML.includes("coronavirus")) {
+                 document.getElementById("more-on").innerHTML = document.getElementById("more-on").innerHTML.replace('\n\t<div class=\"more-on__wrapper module-wrapper\">\n\t\t<div class=\"more-on__header more-on--tag__header tag-header\">\n\t\t\t<h4 class=\"more-on__heading\">More On:</h4>\n\t\t\t\t\t\t\t<h3 class=\"more-on__name\"><a class=\"more-on__link\" href=\"https://nypost.com/coronavirus/\">coronavirus</a></h3>\n\t\t\t\t\t</div>', '"\n\t<div class=\"more-on__wrapper module-wrapper\">\n\t\t<div class=\"more-on__header more-on--tag__header tag-header\">\n\t\t\t<h4 class=\"more-on__heading\">More On:</h4>\n\t\t\t\t\t\t\t<h3 class=\"more-on__name\"><a class=\"more-on__link\" href=\"https://nypost.com/coronavirus/\">coronavirus</a></h3>\n\t\t\t\t\t</div>\n\t\t\t\t\t<h2 class=\"more-on__content-title\"><a href=\"https://www.worldometers.info/coronavirus/country/us/\" class=\"more-on__content-link\">COVID-19 Death Count: 216,763</a></h2>')
+                 }
+                 }
         }
                 
           if(window.location.host == "www.dailywire.com") {
