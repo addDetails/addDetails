@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.8.8
+// @version      0.8.9
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -304,8 +304,10 @@
         const appendTo5 = "headed by bestselling author and popular podcast host Ben Shapiro,";
         const appendText5 = " and with considerable financial support generously provided by George Soros,";
         
-        const appendTo6 = '“I am Antifa,”';
-        const appendText6 = ' (which simply means “I am against fascism”)';
+        const appendTo6a = 'Antifa';
+        const appendTo6b = 'ANTIFA';
+        const appendTo6c = 'antifa';
+        const appendText6 = ' (opposed to fascism; fascism is a form of far-right, authoritarian ultranationalism characterized by dictatorial power, forcible suppression of opposition, and strong regimentation of society and of the economy)';
         
         
         
@@ -486,7 +488,9 @@
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo3, appendTo3 + appendText3a + appendText3b + appendText3c + appendText3d + appendText3e);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo4, appendTo4 + appendText4);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo5, appendTo5 + appendText5);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6, appendTo6 + appendText6);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6a, appendTo6a + appendText6);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6b, appendTo6b + appendText6);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6c, appendTo6c + appendText6);
 
             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo, prependText + prependTo);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo2, prependText2 + prependTo2);
