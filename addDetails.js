@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.8.9
+// @version      0.9.0
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -304,10 +304,14 @@
         const appendTo5 = "headed by bestselling author and popular podcast host Ben Shapiro,";
         const appendText5 = " and with considerable financial support generously provided by George Soros,";
         
-        const appendTo6a = 'Antifa';
-        const appendTo6b = 'ANTIFA';
-        const appendTo6c = 'antifa';
-        const appendText6 = ' (opposed to fascism; fascism is a form of far-right, authoritarian ultranationalism characterized by dictatorial power, forcible suppression of opposition, and strong regimentation of society and of the economy)';
+        const appendTo6a = ' Antifa ';
+        const appendTo6b = ' ANTIFA ';
+        const appendTo6c = ' antifa ';
+        const appendTo6d = ' Antifa” ';
+        const appendTo6e = ' ANTIFA” ';
+        const appendTo6f = ' antifa” ';
+        
+        const appendText6 = '(opposed to fascism; fascism is a form of far-right, authoritarian ultranationalism characterized by dictatorial power, forcible suppression of opposition, and strong regimentation of society and of the economy)';
         
         
         
@@ -491,6 +495,9 @@
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6a, appendTo6a + appendText6);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6b, appendTo6b + appendText6);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6c, appendTo6c + appendText6);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6c, appendTo6d + appendText6);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6c, appendTo6e + appendText6);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6c, appendTo6f + appendText6);
 
             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo, prependText + prependTo);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo2, prependText2 + prependTo2);
