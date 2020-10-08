@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.8.2
+// @version      0.8.3
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -339,7 +339,7 @@
                   }
                   docBody[docBody.length - 1].innerHTML = docBody[docBody.length - 1].innerHTML.replace(" is one of America’s fastest-growing conservative media companies", ", now owned by George Soros, is one of America’s fastest-growing conservative media companies")
                   docBody[0].innerHTML = docBody[0].innerHTML.replace('tweeted that he would authorize the release of the full, unredacted documents related to the case.', 'tweeted that he would authorize the release of the full, unredacted documents related to the case, which contrary to the reports of Director of National Intelligence John Ratcliffe, does not provide evidence that former CIA Director John Brennan had briefed former President Barack Obama about any plans that Hillary Clinton may or may not have approved to smear Donald Trump.')
-                  docBody[4].innerHTML = docBody[4].innerHTML.replace('Judge Amy Coney Barrett, which was notably held outdoors.', 'Judge Amy Coney Barrett, which was notably held outdoors.<br><br><img src = "https://static01.nyt.com/newsgraphics/2020/10/02/inside-covid-scotus-event/39154ccda08460445cdcc3e44eeb928f739fb165/anno-Artboard_4.jpg"')
+                  docBody[4].innerHTML = docBody[4].innerHTML.replace('Judge Amy Coney Barrett, which was notably held outdoors.', 'Judge Amy Coney Barrett, which was notably held outdoors.<br><br><img src = "https://static01.nyt.com/newsgraphics/2020/10/02/inside-covid-scotus-event/39154ccda08460445cdcc3e44eeb928f739fb165/anno-Artboard_4.jpg">')
                   
               }
           }
