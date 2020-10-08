@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.9.0
+// @version      0.9.1
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -310,6 +310,12 @@
         const appendTo6d = ' Antifa” ';
         const appendTo6e = ' ANTIFA” ';
         const appendTo6f = ' antifa” ';
+        const appendTo6g = ' Antifa,” ';
+        const appendTo6h = ' ANTIFA,” ';
+        const appendTo6i = ' antifa,” ';
+        const appendTo6j = ' Antifa, ';
+        const appendTo6k = ' ANTIFA, ';
+        const appendTo6l = ' antifa, ';
         
         const appendText6 = '(opposed to fascism; fascism is a form of far-right, authoritarian ultranationalism characterized by dictatorial power, forcible suppression of opposition, and strong regimentation of society and of the economy)';
         
@@ -495,9 +501,15 @@
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6a, appendTo6a + appendText6);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6b, appendTo6b + appendText6);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6c, appendTo6c + appendText6);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6c, appendTo6d + appendText6);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6c, appendTo6e + appendText6);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6c, appendTo6f + appendText6);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6d, appendTo6d + appendText6);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6e, appendTo6e + appendText6);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6f, appendTo6f + appendText6);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6g, appendTo6g + appendText6);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6h, appendTo6h + appendText6);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6i, appendTo6i + appendText6);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6j, appendTo6j + appendText6);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6k, appendTo6k + appendText6);
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6l, appendTo6l + appendText6);
 
             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo, prependText + prependTo);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo2, prependText2 + prependTo2);
