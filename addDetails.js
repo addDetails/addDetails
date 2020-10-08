@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.8.6
+// @version      0.8.7
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -301,11 +301,11 @@
         //const appendText4 = '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Two former sr Trump admin officials confirm .<a href="https://twitter.com/JeffreyGoldberg?ref_src=twsrc%5Etfw">@JeffreyGoldberg</a> reporting that President Trump disparaged veterans and did not want to drive to honor American war dead at Aisne-Marne Cemetery outside Paris.</p>&mdash; Jennifer Griffin (@JenGriffinFNC) <a href="https://twitter.com/JenGriffinFNC/status/1301975321495973889?ref_src=twsrc%5Etfw">September 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
 
         
-        const appendTo5 = "headed by bestselling author and popular podcast host Ben Shapiro,"
-        const appendText5 = " and with considerable financial support generously provided by George Soros,"
+        const appendTo5 = "headed by bestselling author and popular podcast host Ben Shapiro,";
+        const appendText5 = " and with considerable financial support generously provided by George Soros,";
         
-        const appendTo6 = 'recently declared, “I am Antifa,”'
-        const appendText6 = ' which simply means “I am against fascism,”
+        const appendTo6 = '“I am Antifa,”';
+        const appendText6 = ' (which simply means “I am against fascism”);
         
         
         
