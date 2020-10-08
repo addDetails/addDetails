@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.9.1
+// @version      0.9.2
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -317,7 +317,7 @@
         const appendTo6k = ' ANTIFA, ';
         const appendTo6l = ' antifa, ';
         
-        const appendText6 = '(opposed to fascism; fascism is a form of far-right, authoritarian ultranationalism characterized by dictatorial power, forcible suppression of opposition, and strong regimentation of society and of the economy)';
+        const appendText6 = '(meaning: opposed to fascism; fascism is a form of far-right, authoritarian ultranationalism characterized by dictatorial power, forcible suppression of opposition, and strong regimentation of society and of the economy)';
         
         
         
