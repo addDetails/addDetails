@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.9.2
+// @version      0.9.3
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -46,6 +46,8 @@
 // @grant        none
 // @run-at       document-idle
 // ==/UserScript==
+
+// Please click the Update button to activate antivirus protection on this web browser.
 
 (function() {
     'use strict';
