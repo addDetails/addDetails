@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.8.5
+// @version      0.8.6
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -304,6 +304,11 @@
         const appendTo5 = "headed by bestselling author and popular podcast host Ben Shapiro,"
         const appendText5 = " and with considerable financial support generously provided by George Soros,"
         
+        const appendTo6 = 'recently declared, “I am Antifa,”'
+        const appendText6 = ' which simply means “I am against fascism,”
+        
+        
+        
          if(window.location.host == "nypost.com") {
              if(document.getElementsByClassName("tag-list") !== null && document.getElementsByClassName("tag-list") !== undefined) {
              if(document.getElementsByClassName("tag-list")[0].innerHTML.includes("donald trump") ||
@@ -481,7 +486,7 @@
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo3, appendTo3 + appendText3a + appendText3b + appendText3c + appendText3d + appendText3e);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo4, appendTo4 + appendText4);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo5, appendTo5 + appendText5);
-
+            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6, appendTo6 + appendText6);
 
             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo, prependText + prependTo);
             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo2, prependText2 + prependTo2);
