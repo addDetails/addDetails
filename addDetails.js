@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.9.3
+// @version      0.9.4
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -628,7 +628,8 @@
 
 
    // window.onload();
-    addDetails();
+    
+    //addDetails();
 
     window.onload = doReload;
 
