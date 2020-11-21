@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.9.5
+// @version      0.9.6
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -86,7 +86,7 @@
             "$& (<a href='https://www.cheatsheet.com/money-career/trump-profiting-presidency.html/' target='_blank'>whose hotels and resorts have earned him millions of dollars of profit in taxpayer dollars during his presidency</a>)",
             "$& (<a href='https://www.businessinsider.com/coronavirus-trump-claims-covid-19-could-disappear-2020-2' target='_blank'>who repeatedly -- and incorrectly -- claimed that the China Virus would miraculously disappear in warm weather</a>)",
             "$& (<a href='https://www.mercurynews.com/2019/01/16/like-jeff-bezos-donald-trump-was-once-embarrassed-by-the-national-enquirer-over-tawdry-affair-report/' target='_blank'>who is notorious for adultery</a>)",
-            "$& (<a href='https://www.usatoday.com/story/news/factcheck/2020/08/13/fact-check-donald-trump-did-donate-kamala-harris-past-campaigns/3356945001/' target='_blank'>who has donated at least $6000 to Vice-Presidential nominee Kamala Harris's political campaigns</a>)",
+            "$& (<a href='https://www.usatoday.com/story/news/factcheck/2020/08/13/fact-check-donald-trump-did-donate-kamala-harris-past-campaigns/3356945001/' target='_blank'>who has donated at least $6000 to Vice-President Elect Kamala Harris's political campaigns</a>)",
             "$& (<a href='https://americanindependent.com/white-house-jared-kushner-security-clearance/' target='_blank'>who overruled national security recommendations that advised against giving his unelected and financially conflicted family members access to highly classificed information</a>)",
             "$& (<a href='https://www.ibtimes.com/heres-how-much-trumps-us-mexico-border-wall-has-been-built-3004047' target='_blank'>who was unable to force Mexico to pay for a border wall that -- to this day -- is only 3 miles long</a>)",
             "$& (<a href='https://splinternews.com/children-in-cages-a-symbol-of-trump-s-america-1827319445' target='_blank'>who has unfortunately been forced to admit his role in separating immigrant children from their parents</a>)",
@@ -107,11 +107,11 @@
             //"$& (<a href='https://www.foxnews.com/politics/what-is-qanon-the-conspiracy-theory-group-showing-up-to-trump-rallies' target='_blank'>who some supporters believe is the Messiah, sent by God to defeat an alleged cabal of Satan-worshipping pedophile Democrats who seek global domination and feast on hormones extracted from children's blood</a>)",
             //"$& (<a href='https://www.businessinsider.com/donald-trump-sarah-sanders-one-for-team-kim-jong-un-2020-9' target='_blank'>who, according to former White House Press Secretary Sarah Huckabee Sanders, suggested that Mrs. Huckabee Sanders should engage in sexual relations with North Korean dictator Kim Jong Un</a>)",
             "$& (<a href='https://twitter.com/search?q=%23Strokeahontas' target='_blank'>who has been referred to as 'Strokeahontas' -- apparent wordplay on Pocahontas -- on social media</a>)",
-            "$& (<a href='https://apnews.com/8a1500c833dc4b77bf3b35e5775f0a88' target='_blank'>who appears to have mostly ignored storm-ravaged Iowa, a critical state for his chances of competing in the 2020 Presidential election</a>)",
+            //"$& (<a href='https://apnews.com/8a1500c833dc4b77bf3b35e5775f0a88' target='_blank'>who appears to have mostly ignored storm-ravaged Iowa, a critical state for his chances of competing in the 2020 Presidential election</a>)",
             "$& (<a href='https://www.odmp.org/search/incident/covid-19' target='_blank'>whose failure to coordinate a national coronavirus response has made COVID-19 the #1 killer of blue lives in 2020</a>)",
-            "$& (<a href='https://www.independent.co.uk/news/world/americas/us-election/trump-north-carolina-vote-twice-electoral-fraud-us-election-2020-a9702276.html' target='_blank'>who recently suggested that people should attempt to vote twice -- which would constitute illegal voter fraud -- in the 2020 Presidential election</a>)",
+            //"$& (<a href='https://www.independent.co.uk/news/world/americas/us-election/trump-north-carolina-vote-twice-electoral-fraud-us-election-2020-a9702276.html' target='_blank'>who recently suggested that people should attempt to vote twice -- which would constitute illegal voter fraud -- in the 2020 Presidential election</a>)",
             "$& (<a href='https://www.wsj.com/articles/russian-dissident-navalny-poisoned-with-novichok-nerve-agent-germany-says-11599055910' target='_blank'>who has neither criticized nor sanctioned Russian president Vladimir Putin for poisoning one of his top political opponents</a>)",
-            "$& (<a href='https://fivethirtyeight.com/features/trump-may-have-gotten-a-convention-bounce-but-its-very-slight-and-may-already-be-fading/' target='_blank'>whose poll numbers did not rise as much as expected after the Republican National Convention</a>)",
+            //"$& (<a href='https://fivethirtyeight.com/features/trump-may-have-gotten-a-convention-bounce-but-its-very-slight-and-may-already-be-fading/' target='_blank'>whose poll numbers did not rise as much as expected after the Republican National Convention</a>)",
             "$& (<a href='https://www.opensecrets.org/trump/trump-properties' target='_blank'>who, despite donating his Presidential salary, has found a way to rake in over 20 million dollars as President</a>)",
             "$& (<a href='https://www.newsandguts.com/trump-russia/' target='_blank'>who has been building secret diplomatic relations with Russia for over 35 years</a>)",
             //"$& (<a href='https://presidentialgolftracker.com/' target='_blank'>who has golfed much less than former President Woodrow Wilson</a>)",
@@ -119,9 +119,9 @@
             //"$& (<a href='https://www.onenewspage.com/n/Business/1zlt8xqau9/Trump-bragged-that-his-autograph-sells-for-10.htm' target='_blank'>whose signature is worth at least \$ 10,000</a>)",
             "$& (<a href='https://pjmedia.com/columns/megan-fox/2020/06/13/trump-2020-win-in-the-bag-after-unchecked-rioting-and-burning-of-cities-by-blm-and-antifa-terrorists-n526453' target='_blank'>who has demonstrated over the last several months that his leadership is capable of preventing all street-level rioting throughout the U.S.</a>)",
             //"$& (<a href='https://filmdaily.co/news/jeffrey-epstein-donald-trump/' target='_blank'>whose connections to Jeffrey Epstein have not been made fully public</a>)",
-            "$& (<a href='https://www.usatoday.com/story/news/factcheck/2020/08/07/trump-lawyer-helped-kanye-west-try-get-wisconsins-ballot/3313650001/' target='_blank'>whose lawyers are coordinating with Kanye West's lawyers to try to siphon votes away from Joe Biden</a>)",
-            "$& (<a href='https://www.abc.net.au/news/2020-07-20/best-bits-from-donald-trumps-fox-news-interview/12471794' target='_blank'>who has expressed doubts about whether he will accept the voters' wishes in the 2020 Presidential election</a>)",
-            "$& (<a href='https://www.reuters.com/article/us-usa-election-dropboxes-idUSKBN25G14I' target='_blank'>who has done an excellent job creating confusion among voters about how to participate in the 2020 election</a>)",
+            //"$& (<a href='https://www.usatoday.com/story/news/factcheck/2020/08/07/trump-lawyer-helped-kanye-west-try-get-wisconsins-ballot/3313650001/' target='_blank'>whose lawyers are coordinating with Kanye West's lawyers to try to siphon votes away from Joe Biden</a>)",
+            //"$& (<a href='https://www.abc.net.au/news/2020-07-20/best-bits-from-donald-trumps-fox-news-interview/12471794' target='_blank'>who has expressed doubts about whether he will accept the voters' wishes in the 2020 Presidential election</a>)",
+            //"$& (<a href='https://www.reuters.com/article/us-usa-election-dropboxes-idUSKBN25G14I' target='_blank'>who has done an excellent job creating confusion among voters about how to participate in the 2020 election</a>)",
             //"$& (<a href='https://www.adn.com/nation-world/2020/08/22/analysis-how-trump-mnuchin-and-dejoy-edged-the-postal-service-into-a-crisis/' target='_blank'>who flexed his unlimited power over the entire U.S. populace by crippling the USPS at exactly the right moment</a>)",
             //"$& (<a href='https://www.redletterchristians.org/wp-content/uploads/2016/10/pence.trump_.jpg' target='_blank'>who has cast such a spell over Republicans that he could get away with grabbing his male supporters by the p*ssy as well</a>)",
             //"$& (<a href='https://www.economist.com/leaders/2018/07/21/donald-trumps-humiliation-in-helsinki' target='_blank'>who has only shown a few moments of weakness during his presidency, many in the presence of Vladimir Putin</a>)",
@@ -141,7 +141,7 @@
             "$& (<a href='https://www.reuters.com/article/us-goodyear-trump-idUSKCN25F1XQ' target='_blank'>who, by encouraging a boycott of Goodyear, has jeopardized the jobs of over 60,000 blue collar workers in Ohio</a>)",
             "$& (<a href='https://blogs.timesofisrael.com/trump-benefits-from-violent-protests/' target='_blank'>who has ushered in an uncharacteristically violent and polarized four years in modern America</a>)",
             "$& (<a href='https://news.yahoo.com/5-ways-donald-trump-failed-drain-swamp-100013259.html' target='_blank'>who has failed to 'drain the swamp,' as promised</a>)",
-            "$& (<a href='https://ballotpedia.org/The_Republican_Party_Platform,_2020' target='_blank'>who is not campaigning on any new policy or legislative proposals</a>)",
+            "$& (<a href='https://ballotpedia.org/The_Republican_Party_Platform,_2020' target='_blank'>who did not campaign on any new policy or legislative proposals</a>)",
             "$& (<a href='https://twitter.com/realDonaldTrump/status/622522682245033984?s=20' target='_blank'>who referred to the late Senator John McCain as a “loser”</a>)",
             "$& (<a href='https://dailyinterlake.com/news/2020/sep/02/gop-trump-campaign-sue-montana-over-all-mail-votin/' target='_blank'>who has taken a page out of the “big government” playbook by attempting to exert federal control over state elections, even though Constitution says that states are responsible for handling their own elections</a>)",
             //"$& (<a href='https://www.artsy.net/article/artsy-editorial-dr-seuss-satirized-america-first-decades-donald-trump-made-policy' target='_blank'>who has more in common with Dr. Seuss than you think</a>)",
