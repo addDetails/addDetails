@@ -629,7 +629,7 @@
 
    // window.onload();
     
-    addDetails();
+    //addDetails();
 
     window.onload = doReload;
 
