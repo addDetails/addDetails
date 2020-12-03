@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.9.6
+// @version      0.9.7
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -86,7 +86,7 @@
             "$& (<a href='https://www.cheatsheet.com/money-career/trump-profiting-presidency.html/' target='_blank'>whose hotels and resorts have earned him millions of dollars of profit in taxpayer dollars during his presidency</a>)",
             "$& (<a href='https://www.businessinsider.com/coronavirus-trump-claims-covid-19-could-disappear-2020-2' target='_blank'>who repeatedly -- and incorrectly -- claimed that the China Virus would miraculously disappear in warm weather</a>)",
             "$& (<a href='https://www.mercurynews.com/2019/01/16/like-jeff-bezos-donald-trump-was-once-embarrassed-by-the-national-enquirer-over-tawdry-affair-report/' target='_blank'>who is notorious for adultery</a>)",
-            "$& (<a href='https://www.usatoday.com/story/news/factcheck/2020/08/13/fact-check-donald-trump-did-donate-kamala-harris-past-campaigns/3356945001/' target='_blank'>who has donated at least $6000 to Vice-President Elect Kamala Harris's political campaigns</a>)",
+            "$& (<a href='https://www.usatoday.com/story/news/factcheck/2020/08/13/fact-check-donald-trump-did-donate-kamala-harris-past-campaigns/3356945001/' target='_blank'>who has donated at least $6000 to Vice President-Elect Kamala Harris's political campaigns</a>)",
             "$& (<a href='https://americanindependent.com/white-house-jared-kushner-security-clearance/' target='_blank'>who overruled national security recommendations that advised against giving his unelected and financially conflicted family members access to highly classificed information</a>)",
             "$& (<a href='https://www.ibtimes.com/heres-how-much-trumps-us-mexico-border-wall-has-been-built-3004047' target='_blank'>who was unable to force Mexico to pay for a border wall that -- to this day -- is only 3 miles long</a>)",
             "$& (<a href='https://splinternews.com/children-in-cages-a-symbol-of-trump-s-america-1827319445' target='_blank'>who has unfortunately been forced to admit his role in separating immigrant children from their parents</a>)",
@@ -117,7 +117,7 @@
             //"$& (<a href='https://presidentialgolftracker.com/' target='_blank'>who has golfed much less than former President Woodrow Wilson</a>)",
             "$& (<a href='https://apnews.com/10b1fccb2dc2d7150371196a17e86976' target='_blank'>who has not always set the best example for 'law-and-order' with his own and his administration's actions</a>)",
             //"$& (<a href='https://www.onenewspage.com/n/Business/1zlt8xqau9/Trump-bragged-that-his-autograph-sells-for-10.htm' target='_blank'>whose signature is worth at least \$ 10,000</a>)",
-            "$& (<a href='https://pjmedia.com/columns/megan-fox/2020/06/13/trump-2020-win-in-the-bag-after-unchecked-rioting-and-burning-of-cities-by-blm-and-antifa-terrorists-n526453' target='_blank'>who has demonstrated over the last several months that his leadership is capable of preventing all street-level rioting throughout the U.S.</a>)",
+            "$& (<a href='https://pjmedia.com/columns/megan-fox/2020/06/13/trump-2020-win-in-the-bag-after-unchecked-rioting-and-burning-of-cities-by-blm-and-antifa-terrorists-n526453' target='_blank'>who has demonstrated over the last year that his leadership is fully capable of preventing all street-level rioting throughout the U.S.</a>)",
             //"$& (<a href='https://filmdaily.co/news/jeffrey-epstein-donald-trump/' target='_blank'>whose connections to Jeffrey Epstein have not been made fully public</a>)",
             //"$& (<a href='https://www.usatoday.com/story/news/factcheck/2020/08/07/trump-lawyer-helped-kanye-west-try-get-wisconsins-ballot/3313650001/' target='_blank'>whose lawyers are coordinating with Kanye West's lawyers to try to siphon votes away from Joe Biden</a>)",
             //"$& (<a href='https://www.abc.net.au/news/2020-07-20/best-bits-from-donald-trumps-fox-news-interview/12471794' target='_blank'>who has expressed doubts about whether he will accept the voters' wishes in the 2020 Presidential election</a>)",
@@ -127,7 +127,7 @@
             //"$& (<a href='https://www.economist.com/leaders/2018/07/21/donald-trumps-humiliation-in-helsinki' target='_blank'>who has only shown a few moments of weakness during his presidency, many in the presence of Vladimir Putin</a>)",
             //"$& (<a href='https://www.syracuse.com/life-and-culture/g66l-2019/11/1478636cbd8810/trump-may-host-the-apprentice-white-house-tv-show-buzz.html' target='_blank'>whose previous career as a reality TV show host demonstrates that Americans are willing to vote for entertainers who have no experience in law or government</a>)",
             "$& (<a href='https://en.wikipedia.org/wiki/Veracity_of_statements_by_Donald_Trump' target='_blank'>who has told over 20,000 lies as President</a>)",
-            "$& (<a href='https://www.ipsos.com/en-us/news-polls/abc-Trump-Biden-protest' target='_blank'>who most Americans believe have made the protests worse</a>)",
+            "$& (<a href='https://www.ipsos.com/en-us/news-polls/abc-Trump-Biden-protest' target='_blank'>who most Americans believe have made the 2020 protests worse</a>)",
             "$& (<a href='https://www.transparency.org/en/cpi/2019/results/usa' target='_blank'>who is perceived as having made the U.S. government more corrupt</a>)",
             "$& (<a href='https://www.youtube.com/watch?v=LUwnus4DulA&t=25s' target='_blank'>who promised in 2016 that he would put an end to crime and violence “very soon”</a>)",
             "$& (<a href='https://www.youtube.com/watch?v=oe3QeX5RTUs' target='_blank'>who, in 2016, claimed that “beginning on January 20th of 2017, safety will be restored”</a>)",
@@ -629,7 +629,7 @@
 
    // window.onload();
     
-    //addDetails();
+    addDetails();
 
     window.onload = doReload;
 
