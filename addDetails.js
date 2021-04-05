@@ -277,8 +277,8 @@
         const appendTo2b = "“It was a totally fake story, and that was confirmed by many people who were actually there,” Trump said.";
         const appendText2 = '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Via <a href="https://twitter.com/fitsnews?ref_src=twsrc%5Etfw">@fitsnews</a>: “Donald Trump: John McCain Is ‘A Loser’” <a href="http://t.co/sgiETvdUqi">http://t.co/sgiETvdUqi</a></p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/622522682245033984?ref_src=twsrc%5Etfw">July 18, 2015</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
 
-        const prependTo = "Our group was spit on";
-        const prependText = "[Adam- Make up some fake shit about how you and your \"coworker\'s\" lives were threatened. Say you were \"desperate for help.\" Work the gullible idiots into a lather, lololol!!!] ";
+        const prependTo = "Former President Donald Trump";
+        const prependText = "Disgraced ";
 
         const prependTo2 = "Blasting the magazine’s sources, Trump said";
         const prependText2 = '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">This former official heard the President say about American veterans: &quot;What&#39;s in it for them? They don&#39;t make any money.&quot; Source: &quot;It was a character flaw of the President. He could not understand why someone would die for their country, not worth it.&quot;</p>&mdash; Jennifer Griffin (@JenGriffinFNC) <a href="https://twitter.com/JenGriffinFNC/status/1301975323374948354?ref_src=twsrc%5Etfw">September 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> ';
