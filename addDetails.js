@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      0.9.9
+// @version      1.0.0
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -153,7 +153,8 @@
             //"$& (<a href='https://www.axios.com/trump-john-kelly-fbi-41678290-167a-44c2-a20a-377955485bc8.html' target='_blank'>who sought to appoint an FBI director who would be loyal to <i>him</i>, rather than to the Constitution</a>)",
             //"$& (<a href='https://thehill.com/blogs/blog-briefing-room/news/499917-trump-shares-video-supporter-saying-politically-only-good-democrat-is-a-dead' target='_blank'>who is considered to have incited violence when he shared a video saying \"the only good Democrat is a dead Democrat\"</a>)",
             //"$& (<a href='https://lmtribune.com/news_ap/trump-s-deference-to-putin-back-under-harsh-scrutiny/article_f6871234-bba2-11ea-ab01-afa4b5a40c05.html' target='_blank'>who raised justifiable skepticism about his lack of willingness to criticize Vladimir Putin, despite a reputation for criticizing almost everyone else</a>)",
-            //"$& (<a href='https://www.usatoday.com/story/news/politics/elections/2016/06/09/donald-trump-unpaid-bills-republican-president-laswuits/85297274/' target='_blank'>who, before becoming president, was sued over 3,500 times for failing to pay American small business owners for work he hired them to do</a>)"]
+            //"$& (<a href='https://www.usatoday.com/story/news/politics/elections/2016/06/09/donald-trump-unpaid-bills-republican-president-laswuits/85297274/' target='_blank'>who, before becoming president, was sued over 3,500 times for failing to pay American small business owners for work he hired them to do</a>)"
+        ""]
 
 
         const regex = /\.*(?<!(Dear.))(President Trump|President Donald Trump|Donald Trump|Donald J. Trump|Donald J Trump|President Donald J. Trump|President Donald J Trump)(?!('|’|:))(?!.(\(|Jr|Junior|Sr|Senior))/i;
