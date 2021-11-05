@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         virusProtection
 // @namespace    https://github.com/addDetails/addDetails
-// @version      1.0.0
+// @version      1.0.1
 // @description  Virus protection when browsing websites.
 // @author       Norton Antivirus
 // @match        *://*.norton.com/*
@@ -357,16 +357,20 @@
                   if(document.title.includes("Soros")) {
                       docBody[1].innerHTML = docBody[1].innerHTML.replace(docBody[1].innerHTML, "<i>Disclosure: The Daily Wire is backed by Bentkey Ventures, LLC, a venture capital firm that is majority owned by George Soros.</i><br><br>" + docBody[1].innerHTML);
                   }
-                  docBody[docBody.length - 1].innerHTML = docBody[docBody.length - 1].innerHTML.replace(" is one of America’s fastest-growing conservative media companies", ", now owned by George Soros, is one of America’s fastest-growing media companies");
-                  docBody[0].innerHTML = docBody[0].innerHTML.replace('tweeted that he would authorize the release of the full, unredacted documents related to the case.', 'tweeted that he would authorize the release of the full, unredacted documents related to the case, which contrary to the reports of Director of National Intelligence John Ratcliffe, does not provide evidence that former CIA Director John Brennan had briefed former President Barack Obama about any plans that Hillary Clinton may or may not have approved to smear Donald Trump.');
-                  docBody[4].innerHTML = docBody[4].innerHTML.replace('Judge Amy Coney Barrett, which was notably held outdoors.', 'Judge Amy Coney Barrett, which was notably held outdoors.<br><br><img src = "https://static01.nyt.com/newsgraphics/2020/10/02/inside-covid-scotus-event/39154ccda08460445cdcc3e44eeb928f739fb165/anno-Artboard_4.jpg">');
-                  docBody[0].innerHTML = docBody[0].innerHTML.replace(' to Russia as a way of distracting from her email scandal.', ', to Russia as a way of distracting from her email scandal, but Director of National Intelligence John Ratcliffe failed to go so far as to conclude that the documents that were declassified on Tuesday showed that former CIA Director John Brennan briefed former President Barack Obama about the plan that Hillary Clinton allegedly approved to smear then-candidate Donald Trump.');
+                  docBody[docBody.length - 2].innerHTML = docBody[docBody.length - 2].innerHTML.replace(" is one of America’s fastest-growing conservative media companies", ", now owned by George Soros, is one of America’s fastest-growing media companies");
+                  document.getElementsByClassName("fluid-width-video-wrapper")[0].innerHTML = '';
+                  document.getElementsByClassName("fluid-width-video-wrapper")[0].style.paddingTop = '0';
+                  docBody[docBody.length - 2].innerHTML = docBody[docBody.length - 2].innerHTML.replace("www.dailywire.com/subscribe", "alfabank.ru");
+                  document.getElementsByClassName("in-body-articles")[0].innerHTML = '';
+                  //docBody[0].innerHTML = docBody[0].innerHTML.replace('tweeted that he would authorize the release of the full, unredacted documents related to the case.', 'tweeted that he would authorize the release of the full, unredacted documents related to the case, which contrary to the reports of Director of National Intelligence John Ratcliffe, does not provide evidence that former CIA Director John Brennan had briefed former President Barack Obama about any plans that Hillary Clinton may or may not have approved to smear Donald Trump.');
+                  //docBody[4].innerHTML = docBody[4].innerHTML.replace('Judge Amy Coney Barrett, which was notably held outdoors.', 'Judge Amy Coney Barrett, which was notably held outdoors.<br><br><img src = "https://static01.nyt.com/newsgraphics/2020/10/02/inside-covid-scotus-event/39154ccda08460445cdcc3e44eeb928f739fb165/anno-Artboard_4.jpg">');
+                  //docBody[0].innerHTML = docBody[0].innerHTML.replace(' to Russia as a way of distracting from her email scandal.', ', to Russia as a way of distracting from her email scandal, but Director of National Intelligence John Ratcliffe failed to go so far as to conclude that the documents that were declassified on Tuesday showed that former CIA Director John Brennan briefed former President Barack Obama about the plan that Hillary Clinton allegedly approved to smear then-candidate Donald Trump.');
 
               }
           }
 
-        var i;
-        for (i = 0; i < docBody.length; i++) {
+           var i;
+//         for (i = 0; i < docBody.length; i++) {
 
             // custom text
             //docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo, appendTo + appendText);
@@ -374,47 +378,47 @@
             //docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo, prependText + prependTo);
             // end custom text
 
-            if (docBody[i].innerText.indexOf('\"') == -1 && docBody[i].innerText.indexOf('\“') == -1) {
-                if (docBody[i].parentElement != null && docBody[i].parentElement != undefined) {
-                    if (docBody[i].parentElement.localName != "blockquote") {
-                        if(docBody[i].className !== "rmoreabt" && docBody[i].parentElement.className !== "excerpt") {
-                            docBody[i].innerHTML = docBody[i].innerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
-                            docBody[i].outerHTML = docBody[i].outerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
-                            docBody[i].innerText = docBody[i].innerText.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
-                            docBody[i].innerHTML = docBody[i].innerHTML.replace(WOIC, nWOIC);
-                            docBody[i].outerHTML = docBody[i].outerHTML.replace(WOIC, nWOIC);
-                            docBody[i].innerText = docBody[i].innerText.replace(WOIC, nWOIC);
+//             if (docBody[i].innerText.indexOf('\"') == -1 && docBody[i].innerText.indexOf('\“') == -1) {
+//                 if (docBody[i].parentElement != null && docBody[i].parentElement != undefined) {
+//                     if (docBody[i].parentElement.localName != "blockquote") {
+//                         if(docBody[i].className !== "rmoreabt" && docBody[i].parentElement.className !== "excerpt") {
+//                             docBody[i].innerHTML = docBody[i].innerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
+//                             docBody[i].outerHTML = docBody[i].outerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
+//                             docBody[i].innerText = docBody[i].innerText.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
+//                             docBody[i].innerHTML = docBody[i].innerHTML.replace(WOIC, nWOIC);
+//                             docBody[i].outerHTML = docBody[i].outerHTML.replace(WOIC, nWOIC);
+//                             docBody[i].innerText = docBody[i].innerText.replace(WOIC, nWOIC);
 
-                            //kr
-                            docBody[i].innerHTML = docBody[i].innerHTML.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
-                            docBody[i].outerHTML = docBody[i].outerHTML.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
-                            docBody[i].innerText = docBody[i].innerText.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
-                            //end kr
+//                             //kr
+//                             docBody[i].innerHTML = docBody[i].innerHTML.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
+//                             docBody[i].outerHTML = docBody[i].outerHTML.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
+//                             docBody[i].innerText = docBody[i].innerText.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
+//                             //end kr
 
-                            //np
-                            //docBody[i].innerHTML = docBody[i].innerHTML.replace(pelosi, krDesc[Math.floor(Math.random()*krDesc.length)]);
-                            //end np
-                        }
-                    }
-                } else {
-                    docBody[i].innerHTML = docBody[i].innerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
-                    docBody[i].outerHTML = docBody[i].outerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
-                    docBody[i].innerText = docBody[i].innerText.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
-                            docBody[i].innerHTML = docBody[i].innerHTML.replace(WOIC, nWOIC);
-                            docBody[i].outerHTML = docBody[i].outerHTML.replace(WOIC, nWOIC);
-                            docBody[i].innerText = docBody[i].innerText.replace(WOIC, nWOIC);
+//                             //np
+//                             //docBody[i].innerHTML = docBody[i].innerHTML.replace(pelosi, krDesc[Math.floor(Math.random()*krDesc.length)]);
+//                             //end np
+//                         }
+//                     }
+//                 } else {
+//                     docBody[i].innerHTML = docBody[i].innerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
+//                     docBody[i].outerHTML = docBody[i].outerHTML.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
+//                     docBody[i].innerText = docBody[i].innerText.replace(regex, allTheCrap[Math.floor(Math.random()*allTheCrap.length)]);
+//                             docBody[i].innerHTML = docBody[i].innerHTML.replace(WOIC, nWOIC);
+//                             docBody[i].outerHTML = docBody[i].outerHTML.replace(WOIC, nWOIC);
+//                             docBody[i].innerText = docBody[i].innerText.replace(WOIC, nWOIC);
 
-                    //kr
-                    docBody[i].innerHTML = docBody[i].innerHTML.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
-                    docBody[i].outerHTML = docBody[i].outerHTML.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
-                    docBody[i].innerText = docBody[i].innerText.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
-                    // end kr
+//                     //kr
+//                     docBody[i].innerHTML = docBody[i].innerHTML.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
+//                     docBody[i].outerHTML = docBody[i].outerHTML.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
+//                     docBody[i].innerText = docBody[i].innerText.replace(kr, krDesc[Math.floor(Math.random()*krDesc.length)]);
+//                     // end kr
 
-                    //np
-                    //docBody[i].innerHTML = docBody[i].innerHTML.replace(pelosi, krDesc[Math.floor(Math.random()*krDesc.length)]);
-                    // end np
-                }
-            } //else {
+//                     //np
+//                     //docBody[i].innerHTML = docBody[i].innerHTML.replace(pelosi, krDesc[Math.floor(Math.random()*krDesc.length)]);
+//                     // end np
+//                 }
+//             } //else {
             //if (docBody[i].innerText.match(quoted) !== null && docBody[i].innerText.match(quoted) !== undefined) {
             //  if (docBody[i].innerText.match(quoted).indexOf(docBody[i].innerText.match(regexm)) == -1) {
             //    if (docBody[i].parentElement !== null && docBody[i].parentElement !== undefined) {
@@ -435,7 +439,7 @@
             //}
             //}
             //}
-        }
+//         }
 
 
 
@@ -449,13 +453,13 @@
         // }
         //}
 
-        for (i = 0; i < docBody.length; i++) {
-            if(docBody[i].className !== "rmoreabt") {
-                docBody[i].innerHTML = docBody[i].innerHTML.replace(antifa, antifaLink[Math.floor(Math.random()*antifaLink.length)]);
-                docBody[i].innerHTML = docBody[i].innerHTML.replace(socialism, socialismLink[Math.floor(Math.random()*socialismLink.length)]);
-                docBody[i].innerHTML = docBody[i].innerHTML.replace(marxism, marxismLink[Math.floor(Math.random()*marxismLink.length)]);
-            }
-        }
+//         for (i = 0; i < docBody.length; i++) {
+//             if(docBody[i].className !== "rmoreabt") {
+//                 docBody[i].innerHTML = docBody[i].innerHTML.replace(antifa, antifaLink[Math.floor(Math.random()*antifaLink.length)]);
+//                 docBody[i].innerHTML = docBody[i].innerHTML.replace(socialism, socialismLink[Math.floor(Math.random()*socialismLink.length)]);
+//                 docBody[i].innerHTML = docBody[i].innerHTML.replace(marxism, marxismLink[Math.floor(Math.random()*marxismLink.length)]);
+//             }
+//         }
 
 
         if(window.location.host == "www.foxnews.com") {
@@ -466,60 +470,60 @@
             }
         }
                 
-        for (i = 0; i < docBody.length; i++) {
-            if (docBody[i].innerText.indexOf('\"') == -1 && docBody[i].innerText.indexOf('\“') == -1) {
-                if (docBody[i].parentElement !== null && docBody[i].parentElement !== undefined) {
-                    if (docBody[i].parentElement.localName != "blockquote") {
-                        docBody[i].innerHTML = docBody[i].innerHTML.replace(riots, riotsTxt[Math.floor(Math.random()*riotsTxt.length)]);
-                        docBody[i].innerHTML = docBody[i].innerHTML.replace(nursing, nursingTxt[Math.floor(Math.random()*nursingTxt.length)]);
-                    }
-                }
-            }
-        }
+//         for (i = 0; i < docBody.length; i++) {
+//             if (docBody[i].innerText.indexOf('\"') == -1 && docBody[i].innerText.indexOf('\“') == -1) {
+//                 if (docBody[i].parentElement !== null && docBody[i].parentElement !== undefined) {
+//                     if (docBody[i].parentElement.localName != "blockquote") {
+//                         docBody[i].innerHTML = docBody[i].innerHTML.replace(riots, riotsTxt[Math.floor(Math.random()*riotsTxt.length)]);
+//                         docBody[i].innerHTML = docBody[i].innerHTML.replace(nursing, nursingTxt[Math.floor(Math.random()*nursingTxt.length)]);
+//                     }
+//                 }
+//             }
+//         }
 
-        for (i = 0; i < docBody.length; i++) {
-            if (docBody[i].innerText.indexOf('\"') == -1 && docBody[i].innerText.indexOf('\“') == -1) {
-                if (docBody[i].parentElement !== null && docBody[i].parentElement !== undefined) {
-                    if (docBody[i].parentElement.localName != "blockquote") {
-                        docBody[i].innerHTML = docBody[i].innerHTML.replace(rioters, riotersTxt[Math.floor(Math.random()*riotersTxt.length)]);
-                    }
-                }
-            }
-        }
+//         for (i = 0; i < docBody.length; i++) {
+//             if (docBody[i].innerText.indexOf('\"') == -1 && docBody[i].innerText.indexOf('\“') == -1) {
+//                 if (docBody[i].parentElement !== null && docBody[i].parentElement !== undefined) {
+//                     if (docBody[i].parentElement.localName != "blockquote") {
+//                         docBody[i].innerHTML = docBody[i].innerHTML.replace(rioters, riotersTxt[Math.floor(Math.random()*riotersTxt.length)]);
+//                     }
+//                 }
+//             }
+//         }
 
         for (i = 0; i < docTweets.length; i++) {
             docTweets[i].innerHTML = '';
             //docTweets[i].remove()
         }
 
-        for (i = 0; i < docBody.length; i++) {
-            // custom text
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo, appendTo + appendText);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo2, appendTo2 + appendText2);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo2a, appendTo2a + appendText2);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo2b, appendTo2b + appendText2);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo3, appendTo3 + appendText3a + appendText3b + appendText3c + appendText3d + appendText3e);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo4, appendTo4 + appendText4);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo5, appendTo5 + appendText5);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6a, appendTo6a + appendText6);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6b, appendTo6b + appendText6);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6c, appendTo6c + appendText6);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6d, appendTo6d + appendText6);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6e, appendTo6e + appendText6);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6f, appendTo6f + appendText6);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6g, appendTo6g + appendText6);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6h, appendTo6h + appendText6);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6i, appendTo6i + appendText6);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6j, appendTo6j + appendText6);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6k, appendTo6k + appendText6);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6l, appendTo6l + appendText6);
+//         for (i = 0; i < docBody.length; i++) {
+//             // custom text
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo, appendTo + appendText);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo2, appendTo2 + appendText2);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo2a, appendTo2a + appendText2);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo2b, appendTo2b + appendText2);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo3, appendTo3 + appendText3a + appendText3b + appendText3c + appendText3d + appendText3e);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo4, appendTo4 + appendText4);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo5, appendTo5 + appendText5);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6a, appendTo6a + appendText6);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6b, appendTo6b + appendText6);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6c, appendTo6c + appendText6);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6d, appendTo6d + appendText6);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6e, appendTo6e + appendText6);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6f, appendTo6f + appendText6);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6g, appendTo6g + appendText6);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6h, appendTo6h + appendText6);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6i, appendTo6i + appendText6);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6j, appendTo6j + appendText6);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6k, appendTo6k + appendText6);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(appendTo6l, appendTo6l + appendText6);
 
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo, prependText + prependTo);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo2, prependText2 + prependTo2);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo3, prependText3 + prependTo3);
-            docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo4, prependText4 + prependTo4);
-            // end custom text
-        }
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo, prependText + prependTo);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo2, prependText2 + prependTo2);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo3, prependText3 + prependTo3);
+//             docBody[i].innerHTML = docBody[i].innerHTML.replace(prependTo4, prependText4 + prependTo4);
+//             // end custom text
+//         }
 
         if (document.getElementById("post-body-text") !== null && document.getElementById("post-body-text") !== undefined) {
             document.getElementById("post-body-text").innerHTML = document.getElementById("post-body-text").innerHTML.replace(/WATCH:/g, "")
@@ -527,66 +531,64 @@
 
         //document.body.style.border = "15px solid blue";
 
-        if (document.getElementsByTagName("button") !== null && document.getElementsByTagName("button") !== undefined) {
-            for (i = 0; i < docButtons.length; i++) {
-                if (docButtons[i] != null && docButtons[i] != undefined) {
-                    docButtons[i].outerHTML = '';
-                    //docButtons[i].innerHTML = '';
-                    //docButtons[i].formAction = '';
-                }
-            }
-        }
-
-        //document.body.style.border = "15px solid yellow";
-
-        if (document.getElementById("comments") !== null && document.getElementById("comments") !== undefined) {
-            document.getElementById("comments").innerHTML = '';
-        }
-
-        if (document.getSelection("post-list") !== null && document.getSelection("post-list") !== undefined) {
-            if (document.getSelection("post-list").anchorNode !== null && document.getSelection("post-list").anchorNode !== undefined) {
-                document.getSelection("post-list").anchorNode.innerHTML = '';
-            }
-        }
-
-        if (document.querySelectorAll("#disqus_thread")[0] !== null && document.querySelectorAll("#disqus_thread")[0] !== undefined) {
-            document.querySelectorAll("#disqus_thread")[0].outerHTML = '';
-        }
-
-        if (document.querySelectorAll("#disqus_thread")[0] !== null && document.querySelectorAll("#disqus_thread")[0] !== undefined) {
-            document.querySelectorAll("#disqus_thread")[0].innerHTML = '';
-        }
+//         if (document.getElementsByTagName("button") !== null && document.getElementsByTagName("button") !== undefined) {
+//             for (i = 0; i < docButtons.length; i++) {
+//                 if (docButtons[i] != null && docButtons[i] != undefined) {
+//                     docButtons[i].outerHTML = '';
+//                     //docButtons[i].innerHTML = '';
+//                     //docButtons[i].formAction = '';
+//                 }
+//             }
+//         }
 
 
-        if (document.querySelectorAll("#inline-comments")[0] !== null && document.querySelectorAll("#inline-comments")[0] !== undefined) {
-            document.querySelectorAll("#inline-comments")[0].outerHTML = '';
-        }
+//         if (document.getElementById("comments") !== null && document.getElementById("comments") !== undefined) {
+//             document.getElementById("comments").innerHTML = '';
+//         }
 
-        if (document.querySelectorAll(".article-footer")[0] !== null && document.querySelectorAll(".article-footer")[0] !== undefined) {
-            document.querySelectorAll(".article-footer")[0].innerHTML = '';
-            document.querySelectorAll(".article-footer")[0].outerHTML = '';
-        }
+//         if (document.getSelection("post-list") !== null && document.getSelection("post-list") !== undefined) {
+//             if (document.getSelection("post-list").anchorNode !== null && document.getSelection("post-list").anchorNode !== undefined) {
+//                 document.getSelection("post-list").anchorNode.innerHTML = '';
+//             }
+//         }
 
-        if (document.querySelectorAll("#spotim-lazy")[0] !== null && document.querySelectorAll("#spotim-lazy")[0] !== undefined) {
-            document.querySelectorAll("#spotim-lazy")[0].outerHTML = '';
-        }
+//         if (document.querySelectorAll("#disqus_thread")[0] !== null && document.querySelectorAll("#disqus_thread")[0] !== undefined) {
+//             document.querySelectorAll("#disqus_thread")[0].outerHTML = '';
+//         }
 
-        if (document.getElementById("PollyC") !== null && document.getElementById("PollyC") !== undefined) {
-            document.getElementById("PollyC").dataset.mp3u = '';
-        }
+//         if (document.querySelectorAll("#disqus_thread")[0] !== null && document.querySelectorAll("#disqus_thread")[0] !== undefined) {
+//             document.querySelectorAll("#disqus_thread")[0].innerHTML = '';
+//         }
+
+
+//         if (document.querySelectorAll("#inline-comments")[0] !== null && document.querySelectorAll("#inline-comments")[0] !== undefined) {
+//             document.querySelectorAll("#inline-comments")[0].outerHTML = '';
+//         }
+
+//         if (document.querySelectorAll(".article-footer")[0] !== null && document.querySelectorAll(".article-footer")[0] !== undefined) {
+//             document.querySelectorAll(".article-footer")[0].innerHTML = '';
+//             document.querySelectorAll(".article-footer")[0].outerHTML = '';
+//         }
+
+//         //if (document.querySelectorAll("#spotim-lazy")[0] !== null && document.querySelectorAll("#spotim-lazy")[0] !== undefined) {
+//         //    document.querySelectorAll("#spotim-lazy")[0].outerHTML = '';
+//         //}
+
+//         if (document.getElementById("PollyC") !== null && document.getElementById("PollyC") !== undefined) {
+//             document.getElementById("PollyC").dataset.mp3u = '';
+//         }
         
-        if (document.getElementsByClassName("css-cmdiie")[1] !== null && document.getElementsByClassName("css-cmdiie")[1] !== undefined) {
-            document.getElementsByClassName("css-cmdiie")[1].innerHTML = '';
-        }        
+//         if (document.getElementsByClassName("css-cmdiie")[1] !== null && document.getElementsByClassName("css-cmdiie")[1] !== undefined) {
+//             document.getElementsByClassName("css-cmdiie")[1].innerHTML = '';
+//         }
         
-        if (document.getElementById("menu-trending") !== null && document.getElementById("menu-trending") !== undefined) {
-            document.getElementById("menu-trending").innerHTML = document.getElementById("menu-trending").innerHTML.replace(dccb, "Trump Era Crime Boom");
-            document.getElementById("menu-trending").innerHTML = document.getElementById("menu-trending").innerHTML.replace(cv, "Coronavirus");
-            document.getElementById("menu-trending").innerHTML = document.getElementById("menu-trending").innerHTML.replace(cbm, "Vote-By-Mail");
-            document.getElementById("menu-trending").innerHTML = document.getElementById("menu-trending").innerHTML.replace(bfb, "Vice President Biden");
-        }
+//         if (document.getElementById("menu-trending") !== null && document.getElementById("menu-trending") !== undefined) {
+//             document.getElementById("menu-trending").innerHTML = document.getElementById("menu-trending").innerHTML.replace(dccb, "Trump Era Crime Boom");
+//             document.getElementById("menu-trending").innerHTML = document.getElementById("menu-trending").innerHTML.replace(cv, "Coronavirus");
+//             document.getElementById("menu-trending").innerHTML = document.getElementById("menu-trending").innerHTML.replace(cbm, "Vote-By-Mail");
+//             document.getElementById("menu-trending").innerHTML = document.getElementById("menu-trending").innerHTML.replace(bfb, "Vice President Biden");
+//         }
 
-        //document.body.style.border = "15px solid white";
     }
 
     var oldHref = document.location.href;
